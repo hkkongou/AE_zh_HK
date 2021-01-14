@@ -15,7 +15,7 @@ settings:
 groups:
   SIMPLE:
     global-color: '&7'
-    group-name: "Simple"
+    group-name: "普通"
     # Use this to change the type of item per group
     right-click-book-material: FIREWORK_CHARGE
     right-click-book-damage: 0
@@ -33,7 +33,7 @@ groups:
       chance: 22
   UNIQUE:
     global-color: '&a'
-    group-name: "Unique"
+    group-name: "獨特"
     right-click-book-material: FIREWORK_CHARGE
     # Use this to set firework charge's color only! Uses RGB
     # Find colors here: https://htmlcolorcodes.com/color-picker/
@@ -49,7 +49,7 @@ groups:
       chance: 22
   ELITE:
     global-color: '&b'
-    group-name: "Elite"
+    group-name: "精英"
     right-click-book-material: FIREWORK_CHARGE
     # Use this to set firework charge's color only! Uses RGB
     # Find colors here: https://htmlcolorcodes.com/color-picker/
@@ -65,7 +65,7 @@ groups:
       chance: 22
   ULTIMATE:
     global-color: '&e'
-    group-name: "Ultimate"
+    group-name: "超級"
     right-click-book-material: FIREWORK_CHARGE
     # Use this to set firework charge's color only! Uses RGB
     # Find colors here: https://htmlcolorcodes.com/color-picker/
@@ -81,7 +81,7 @@ groups:
       chance: 22
   LEGENDARY:
     global-color: '&6'
-    group-name: "Legendary"
+    group-name: "傳奇"
     right-click-book-material: FIREWORK_CHARGE
     # Use this to set firework charge's color only! Uses RGB
     # Find colors here: https://htmlcolorcodes.com/color-picker/
