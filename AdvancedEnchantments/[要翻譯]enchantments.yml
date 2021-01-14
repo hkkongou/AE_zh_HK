@@ -509,8 +509,8 @@
 #      - 'My_World'
 
 #---- 1.13 or newer only enchantments ----#
-耕種者:
-  display: '%group-color%耕種者'
+planter:
+  display: '%group-color%耕種者(planter)'
   description: "把種子耕種在 3x3 的空間\n使用時需要 shift+右鍵."
   applies-to: 'Hoes'
   type: 'RIGHT_CLICK'
