@@ -137,13 +137,13 @@ alchemist:
         type: STAINED_GLASS_PANE
         damage: 14
     item-combine:
-      name: "&b&lCLICK TO EXCHANGE"
+      name: "&b&l點擊這裡交換"
       lore:
-        - '&c&lCOSTS &c%price% EXP'
+        - '&c&l消耗 &c%price% 經驗值'
         - ''
-        - '&7Click here to confirm this'
-        - '&7item exchange and recieve your'
-        - '&7epic new item shown above!'
+        - '&7點擊這裡確認'
+        - '&7道具轉換並且接受你的'
+        - '&7在上面顯示的新道具!'
       item:
         type: STAINED_GLASS_PANE
         damage: 5
