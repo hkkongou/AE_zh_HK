@@ -1468,7 +1468,7 @@ shackle:
         - 'PULL_CLOSER:0.1 %victim%'
 cactus:
   display: '%group-color%仙人掌(Cactus)'
-  description: "反傷對手但不影響裝甲耐久度   ."
+  description: "反傷對手但不影響裝甲耐久度."
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'ELITE'
@@ -1653,8 +1653,8 @@ poison:
         - 'POTION:POISON:1:80 %victim%'
         - 'MESSAGE:&b&l** POISON ** %victim%'
 poisoned:
-  display: '%group-color%Poisoned'
-  description: "Chance to give poison to your attacker."
+  display: '%group-color%(Poisoned)'
+  description: "有機率給予對手中毒效果."
   applies-to: 'Armor'
   type: 'DEFENSE;DEFENSE_MOB;DEFENSE_BOW'
   group: 'ELITE'
@@ -1686,8 +1686,8 @@ poisoned:
         - 'POTION:POISON:1:120 %attacker%'
         - 'MESSAGE:&b&l** POISONED ** %attacker%'
 reforged:
-  display: '%group-color%Reforged'
-  description: "Protects weapons and tools durability, items will be take\nlonger to break."
+  display: '%group-color%重新鍛造(Reforged)'
+  description: "保護武器以及工具的耐久度, 道具會被除去\n不會."
   applies-to: 'Weapons and tools'
   type: 'ATTACK_MOB;MINING'
   group: 'ELITE'
@@ -1737,8 +1737,8 @@ reforged:
       effects:
         - 'ADD_DURABILITY_ITEM:-5'
 snare:
-  display: '%group-color%Snare'
-  description: "Chance to slow and fatigue\nenemies with projectiles."
+  display: '%group-color%囚籠纏繞(Snare)'
+  description: "有機率令對手受到緩速效果以及挖礦減速\n必須使用投擲物攻擊才能有效."
   applies-to: 'Bows'
   type: 'BOW;BOW_MOB'
   group: 'ELITE'
@@ -1771,8 +1771,8 @@ snare:
         - 'POTION:SLOW:1:120 %victim%'
         - 'POTION:SLOW_DIGGING:1:120 %victim%'
 springs:
-  display: '%group-color%Springs'
-  description: 'Gives jump boost.'
+  display: '%group-color%引力彈弓(Springs)'
+  description: '給予跳躍加成效果.'
   applies-to: 'Boots'
   type: 'EFFECT_STATIC'
   group: 'ELITE'
@@ -1789,8 +1789,8 @@ springs:
       effects:
         - 'POTION:JUMP:2'
 stormcaller:
-  display: '%group-color%Stormcaller'
-  description: 'Strikes lightning on attacking players.'
+  display: '%group-color%暴風召喚(Stormcaller)'
+  description: '雷電會轟在攻擊你的敵人身上.'
   applies-to: 'Armor'
   type: 'DEFENSE;DEFENSE_MOB'
   group: 'ELITE'
@@ -1822,8 +1822,8 @@ stormcaller:
         - 'LIGHTNING %attacker%'
         - 'EXTINGUISH %attacker%'
 demonforged:
-  display: '%group-color%Demonforged'
-  description: "Increases durability loss on\nyour enemy''s armor."
+  display: '%group-color%惡魔作偽(Demonforged)'
+  description: "令你的敵人消耗耐久度更多."
   applies-to: 'Swords'
   type: 'ATTACK'
   group: 'ELITE'
@@ -1851,8 +1851,8 @@ demonforged:
       effects:
         - 'DAMAGE_ARMOR:<random number>1-3</random number> %victim%'
 trap:
-  display: '%group-color%Trap'
-  description: 'Chance to give buffed slowness effect.'
+  display: '%group-color%圈套(Trap)'
+  description: '有機率給予對方緩速效果.'
   applies-to: 'Swords'
   type: 'ATTACK;ATTACK_MOB'
   group: 'ELITE'
@@ -1878,8 +1878,8 @@ trap:
         - 'POTION:SLOW:2:180 %victim%'
         - 'MESSAGE:&b&l** TRAP ** %victim%'
 undeadruse:
-  display: '%group-color%Undead Ruse'
-  description: "When hit you have a chance to spawn zombie\nhordes to distract and disorient your opponents."
+  display: '%group-color%死靈操控(Undead Ruse)'
+  description: "當你遭到攻擊會有機會召喚殭屍\n騷擾你的對手."
   applies-to: 'Boots'
   type: 'DEFENSE;DEFENSE_MOB'
   group: 'ELITE'
@@ -1956,8 +1956,8 @@ undeadruse:
         - 'GUARD:ZOMBIE:%victim%'
         - 'GUARD:ZOMBIE:%victim%'
 venom:
-  display: '%group-color%Venom'
-  description: 'A chance of dealing poison.'
+  display: '%group-color%毒液(Venom)'
+  description: '令對方受到中毒效果.'
   applies-to: 'Bows'
   type: 'BOW;BOW_MOB'
   group: 'ELITE'
@@ -1981,8 +1981,8 @@ venom:
       effects:
         - 'POTION:POISON:1:80 %victim%'
 voodoo:
-  display: '%group-color%Voodoo'
-  description: 'Gives a chance to deal weakness.'
+  display: '%group-color%巫術(Voodoo)'
+  description: '有機會令對方受到虛弱效果.'
   applies-to: 'Armor'
   type: 'DEFENSE;DEFENSE_MOB'
   group: 'ELITE'
@@ -2020,8 +2020,8 @@ voodoo:
       effects:
         - 'POTION:WEAKNESS:1:120 %attacker%'
 wither:
-  display: '%group-color%Wither'
-  description: 'A chance to give the wither effect.'
+  display: '%group-color%凋零(Wither)'
+  description: '有機會令對方受到凋零效果.'
   applies-to: 'Armor'
   type: 'DEFENSE;DEFENSE_MOB'
   group: 'ELITE'
@@ -2054,8 +2054,8 @@ wither:
       effects:
         - 'POTION:WITHER:1:100 %attacker%'
 smokebomb:
-  display: '%group-color%Smoke Bomb'
-  description: "When you are near death, you will spawn\na smoke bomb to distract your enemies."
+  display: '%group-color%煙霧炸彈(Smoke Bomb)'
+  description: "當你幾乎死亡，會生成\n一個煙霧炸彈騷擾你的對手."
   applies-to: 'Helmet'
   type: 'DEFENSE'
   group: 'ELITE'
