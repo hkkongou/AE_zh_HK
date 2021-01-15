@@ -200,7 +200,7 @@ restore:
         - 'ADD_DURABILITY_ITEM:<round><math>-1 * (%maximum durability%/2)</math></round>'
         - 'MESSAGE:&6&l*** &e&lItem Restored &6&l***'
 shuffle:
-  display: '%group-color%Shuffle'
+  display: '%group-color%搞亂(Shuffle)'
   description: 'Shuffles opponent''s hotbar.'
   applies-to: 'Armor'
   type: 'DEFENSE'
@@ -224,8 +224,8 @@ shuffle:
       effects:
         - 'RANDOMIZE_HOTBAR %attacker%'
 takeoff:
-  display: '%group-color%Take Off'
-  description: 'Allows flying when worn.'
+  display: '%group-color%飛行'
+  description: '穿著時候可以飛行'
   applies-to: 'Boots'
   type: 'EFFECT_STATIC'
   group: 'LEGENDARY'
@@ -237,8 +237,8 @@ takeoff:
         - 'FLY'
         - 'MESSAGE:&eYour &6flying &ehas been toggled!'
 aquatic:
-  display: '%group-color%Aquatic'
-  description: 'Gives permanent water breathing.'
+  display: '%group-color%親水性(Aquatic)'
+  description: '給予永久水中呼吸.'
   applies-to: 'Helmets'
   type: 'EFFECT_STATIC'
   group: 'SIMPLE'
@@ -249,8 +249,8 @@ aquatic:
       effects:
         - 'POTION:WATER_BREATHING:0'
 autosmelt:
-  display: '%group-color%Auto Smelt'
-  description: "Ores are automatically smelted\nwhen mined."
+  display: '%group-color%自動溶煉(Auto Smelt)'
+  description: "挖掘礦物的時候\n會自動溶煉礦物."
   applies-to: 'Pickaxes'
   type: 'MINING'
   group: 'SIMPLE'
@@ -270,8 +270,8 @@ autosmelt:
       effects:
         - 'SMELT'
 confusion:
-  display: '%group-color%Confusion'
-  description: "A chance to deal nausea to\nyour victim."
+  display: '%group-color%混亂(Confusion)'
+  description: "有機率令您的對手\n獲得嘔心效果."
   applies-to: 'Axes'
   type: 'ATTACK'
   group: 'SIMPLE'
@@ -294,8 +294,8 @@ confusion:
       effects:
         - 'POTION:CONFUSION:0:120 %victim%'
 etheral:
-  display: '%group-color%Etheral'
-  description: "Gain haste upon killing mobs"
+  display: '%group-color%亢奮(Etheral)'
+  description: "擊殺怪物時會獲得挖礦加速效果"
   applies-to: 'Sword'
   type: 'KILL_MOB'
   group: 'SIMPLE'
@@ -312,8 +312,8 @@ etheral:
       effects:
         - 'POTION:FAST_DIGGING:2:80'
 experience:
-  display: '%group-color%Experience'
-  description: 'Chance to get experience from mining.'
+  display: '%group-color%經驗加成(Experience)'
+  description: '挖礦時有機率獲得經驗值.'
   applies-to: 'Tools'
   type: 'MINING'
   group: 'SIMPLE'
@@ -348,8 +348,8 @@ experience:
       effects:
         - 'EXP:<random number>2-5</random number>'
 haste:
-  display: '%group-color%Haste'
-  description: 'Allows you to swing your tools faster.'
+  display: '%group-color%挖礦加速(Haste)'
+  description: '給予挖礦加速效果.'
   applies-to: 'Tools'
   type: 'HELD'
   group: 'SIMPLE'
@@ -368,8 +368,8 @@ haste:
       effects:
         - 'POTION:FAST_DIGGING:2'
 insomnia:
-  display: '%group-color%Insomnia'
-  description: "Gives slowness, slow swinging\nand confusion."
+  display: '%group-color%失眠(Insomnia)'
+  description: "給予你的對手移動減速，挖礦減速\n以及."
   applies-to: 'Swords'
   type: 'ATTACK;ATTACK_MOB'
   group: 'SIMPLE'
@@ -426,8 +426,8 @@ insomnia:
         - 'POTION:CONFUSION:2:80 %victim%'
         - 'POTION:SLOW_DIGGING:2:100 %victim%'
 lightning:
-  display: '%group-color%Lightning'
-  description: "A chance to strike lightning\nat the opponent."
+  display: '%group-color%雷霆閃電（Lightning）'
+  description: "有一定機會會產生閃電\n轟擊對手."
   applies-to: 'Bows'
   type: 'BOW;BOW_MOB'
   group: 'SIMPLE'
@@ -451,8 +451,8 @@ lightning:
       effects:
         - 'LIGHTNING %victim%'
 oxygenate:
-  display: '%group-color%Oxygenate'
-  description: "Refills oxygen levels when\nbreaking blocks under water."
+  display: '%group-color%氧氣加成(Oxygenate)'
+  description: "在水中破壞方塊時\n會提升氧氣濃度."
   applies-to: 'Pickaxe'
   type: 'MINING'
   group: 'SIMPLE'
@@ -464,8 +464,8 @@ oxygenate:
       effects:
         - 'FILL_OXYGEN'
 thunderingblow:
-  display: '%group-color%Thundering Blow'
-  description: 'Can cause smite effect on your enemy.'
+  display: '%group-color%雷霆轟炸(Thundering Blow)'
+  description: '近距離攻擊時會有雷電轟炸對手.'
   applies-to: 'Swords'
   type: 'ATTACK;ATTACK_MOB'
   group: 'SIMPLE'
@@ -488,8 +488,8 @@ thunderingblow:
       effects:
         - 'LIGHTNING %victim%'
 glowing:
-  display: '%group-color%Glowing'
-  description: 'Gives permanent night vision.'
+  display: '%group-color%夜視(Glowing)'
+  description: '提供永久夜視效果.'
   applies-to: 'Helmet'
   type: 'EFFECT_STATIC'
   group: 'SIMPLE'
@@ -500,8 +500,8 @@ glowing:
       effects:
         - 'POTION:NIGHT_VISION:0'
 decapitation:
-  display: '%group-color%Decapitation'
-  description: "Victims have a chance of dropping\ntheir head on death."
+  display: '%group-color%斬首(Decapitation)'
+  description: "攻擊的對手會有機率掉落\n他們的頭，當他們死亡."
   applies-to: 'Axes'
   type: 'KILL_PLAYER'
   group: 'SIMPLE'
@@ -521,8 +521,8 @@ decapitation:
       effects:
         - 'DROP_HEAD %victim%'
 headless:
-  display: '%group-color%Headless'
-  description: "Victims have a chance of dropping\ntheir head on death."
+  display: '%group-color%無頭(Headless)'
+  description: "當對手死亡\n會有機率掉落頭顱."
   applies-to: 'Swords'
   type: 'KILL_PLAYER'
   group: 'SIMPLE'
@@ -542,8 +542,8 @@ headless:
       effects:
         - 'DROP_HEAD %victim%'
 obliterate:
-  display: '%group-color%Obliterate'
-  description: 'Extreme knockback.'
+  display: '%group-color%巨力抹煞(Obliterate)'
+  description: '強力擊退對方.'
   applies-to: 'Swords'
   type: 'ATTACK;ATTACK_MOB'
   group: 'SIMPLE'
@@ -576,8 +576,8 @@ obliterate:
       effects:
         - 'PULL_AWAY:3.0 %victim%'
 epicness:
-  display: '%group-color%Epicness'
-  description: 'Gives particles and sound effects.'
+  display: '%group-color%富麗堂皇(Epicness)'
+  description: '攻擊時帶有粒子效果以及聲音效果.'
   applies-to: 'Swords'
   type: 'ATTACK;ATTACK_MOB'
   group: 'SIMPLE'
@@ -603,8 +603,8 @@ epicness:
         - 'PARTICLE:LARGE_SMOKE:50:1 %victim%'
         - 'PLAY_SOUND:GHAST_SCREAM'
 lifebloom:
-  display: '%group-color%Lifebloom'
-  description: "Completely heals allies\nand truces on your death\nin 10 block radius."
+  display: '%group-color%生命綻放(Lifebloom)'
+  description: "治癒身邊友軍\n並且暫緩你的死亡\n範圍：10格內."
   applies-to: 'Leggings'
   type: 'DEATH'
   group: 'UNIQUE'
@@ -642,8 +642,8 @@ lifebloom:
         - 'ADD_HEALTH:40 <aoe> radius=10 target=undamageable </aoe>'
         - 'MESSAGE:&e&l*** &eLifebloom &e&l*** &7(%victim name%) <aoe> radius=10 target=undamageable </aoe>'
 famine:
-  display: '%group-color%Famine'
-  description: "A chance to give your opponent the hunger effect."
+  display: '%group-color%饑荒(Famine)'
+  description: "有機率令你的對手遭遇飢餓效果."
   applies-to: 'Weapons'
   type: 'ATTACK'
   group: 'UNIQUE'
@@ -672,8 +672,8 @@ famine:
       effects:
         - 'POTION:HUNGER:1:120 %victim%'
 obsidiandestroyer:
-  display: '%group-color%Obsidian Destroyer'
-  description: 'Chance to instantly break obsidian blocks.'
+  display: '%group-color%黑曜石粉碎裝置(Obsidian Destroyer)'
+  description: '有機率即時破壞黑曜石.'
   applies-to: 'Pickaxe'
   type: 'SWING'
   group: 'UNIQUE'
@@ -721,8 +721,8 @@ obsidiandestroyer:
       effects:
         - 'BREAK'
 berserk:
-  display: '%group-color%Berserk'
-  description: "A chance of strength\nand mining fatigue."
+  display: '%group-color%狂戰士(Berserk)'
+  description: "有機率提供傷害加成\n但有挖礦減速."
   applies-to: 'Axes'
   type: 'ATTACK;ATTACK_MOB'
   group: 'UNIQUE'
@@ -760,8 +760,8 @@ berserk:
         - 'POTION:SLOW_DIGGING:1:100 %attacker%'
         - 'POTION:INCREASE_DAMAGE:1:100 %attacker%'
 ward:
-  display: '%group-color%Ward'
-  description: "A chance to absorb enemy\ndamage and heal you"
+  display: '%group-color%傷害轉化(Ward)'
+  description: "有機率吸收敵人的傷害\n並且治癒你"
   applies-to: 'Armor'
   type: 'DEFENSE;DEFENSE_MOB'
   group: 'UNIQUE'
@@ -793,8 +793,8 @@ ward:
         - 'STOP_ATTACK'
         - 'POTION:ABSORPTION:0:80 %victim%'
 curse:
-  display: '%group-color%Curse'
-  description: 'Gives strength, slowness and resistance at low hp.'
+  display: '%group-color%死亡咀咒(Curse)'
+  description: '低血量時，給予力量加乘，移動減速\n以及抗性效果.'
   applies-to: 'Chestplate'
   type: 'DEFENSE;DEFENSE_MOB'
   group: 'UNIQUE'
@@ -847,8 +847,8 @@ curse:
         - 'POTION:INCREASE_DAMAGE:1:80 %victim%'
         - 'POTION:DAMAGE_RESISTANCE:1:80 %victim%'
 endershift:
-  display: '%group-color%EnderShift'
-  description: 'Gives speed/health boost at low hp.'
+  display: '%group-color%總結轉移(EnderShift)'
+  description: '低血量時給予兒童加速以及吸收效果.'
   applies-to: 'Helmet, Boots'
   type: 'DEFENSE'
   group: 'UNIQUE'
@@ -884,8 +884,8 @@ endershift:
         - 'MESSAGE:&dYou were about to die, so you have entered the Ender Dimension!'
         - 'POTION:ABSORPTION:2:80 %victim%'
 explosive:
-  display: '%group-color%Explosive'
-  description: 'Explosive arrows.'
+  display: '%group-color%爆炸攻擊(Explosive)'
+  description: '弓箭擊中會產生爆炸效果.'
   applies-to: 'Bows'
   type: 'BOW;BOW_MOB'
   group: 'UNIQUE'
@@ -919,8 +919,8 @@ explosive:
       effects:
         - 'TNT %victim%'
 featherweight:
-  display: '%group-color%Featherweight'
-  description: 'A chance to give a burst of haste.'
+  display: '%group-color%輕盈羽毛(Featherweight)'
+  description: '有機率短暫提供挖礦加速.'
   applies-to: 'Swords'
   type: 'ATTACK;ATTACK_MOB'
   group: 'UNIQUE'
@@ -943,8 +943,8 @@ featherweight:
       effects:
         - 'POTION:FAST_DIGGING:2:100'
 molten:
-  display: '%group-color%Molten'
-  description: 'Chance of setting your attacker ablaze.'
+  display: '%group-color%燃燒炎上(Molten)'
+  description: '有機率使你的對手著火.'
   applies-to: 'Armor'
   type: 'DEFENSE;DEFENSE_MOB'
   group: 'UNIQUE'
@@ -972,8 +972,8 @@ molten:
       effects:
         - 'FLAME:8 %attacker%'
 ravenous:
-  display: '%group-color%Ravenous'
-  description: "Chance to regain hunger\nwhilst in combat."
+  display: '%group-color%戰爭永動(Ravenous)'
+  description: "戰爭中為你恢復飽食度."
   applies-to: 'Axes'
   type: 'ATTACK;ATTACK_MOB'
   group: 'UNIQUE'
@@ -1001,8 +1001,8 @@ ravenous:
       effects:
         - 'ADD_FOOD:<random number>1-4</random number> %attacker%'
 commander:
-  display: '%group-color%Commander'
-  description: "Nearby allies are given haste."
+  display: '%group-color%指揮官(Commander)'
+  description: "給予鄰近玩家挖礦加速."
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'UNIQUE'
@@ -1035,8 +1035,8 @@ commander:
       effects:
         - 'POTION:HASTE:0:140 <aoe> radius=5 target=undamageable </aoe>'
 selfdestruct:
-  display: '%group-color%Self Destruct'
-  description: "When close to death,\ntnt spawns around you to\nend you and remove your dropped\nitems."
+  display: '%group-color%點燃引線(Self Destruct)'
+  description: "幾乎死亡的時候\nTNT會在你的周圍出現\n把你炸死以及移除掉落物."
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'UNIQUE'
@@ -1065,8 +1065,8 @@ selfdestruct:
         - 'MESSAGE:&c&l*** SelfDestruct ***'
         - 'TNT %victim%'
 telepathy:
-  display: '%group-color%Telepathy'
-  description: "Automatically places blocks broken\nby tools in your inventory."
+  display: '%group-color%心靈感應(Telepathy)'
+  description: "將破壞的方塊\n馬上傳送到您的身上."
   applies-to: 'Tools'
   type: 'MINING'
   group: 'UNIQUE'
@@ -1091,8 +1091,8 @@ telepathy:
       effects:
         - 'TP_DROPS'
 sustain:
-  display: '%group-color%Sustain'
-  description: "Chance to regain hunger when getting hit."
+  display: '%group-color%持續飽食(Sustain)'
+  description: "當你被擊中的時候會有機率地回復飽食度."
   applies-to: 'Armor'
   type: 'DEFENSE;DEFENSE_MOB;DEFENSE_BOW'
   group: 'UNIQUE'
@@ -1120,8 +1120,8 @@ sustain:
       effects:
         - 'ADD_FOOD:<random number>1-4</random number> %victim%'
 skillswipe:
-  display: '%group-color%Skill Swipe'
-  description: "A chance to steal some of your enemy's\nEXP every time you damage them."
+  display: '%group-color%經驗偷取(Skill Swipe)'
+  description: "攻擊敵人的時候\n會有機會偷取對方的經驗值."
   applies-to: 'Sword'
   type: 'ATTACK'
   group: 'UNIQUE'
@@ -1154,8 +1154,8 @@ skillswipe:
       effects:
         - 'STEAL_EXP:<random number>25-350</random number> %attacker%'
 plaguecarrier:
-  display: '%group-color%Plague Carrier'
-  description: "When near death summons creepers\nand debuffs to avenge you."
+  display: '%group-color%死靈法師(Plague Carrier)'
+  description: "即將死亡的時候會召喚苦力怕\n以及負面效果為你復仇."
   applies-to: 'Leggings'
   type: 'DEFENSE;DEFENSE_MOB'
   group: 'UNIQUE'
@@ -1232,8 +1232,8 @@ plaguecarrier:
         - 'GUARD:CREEPER:%victim%'
         - 'POTION:BLINDNESS:2:100 %attacker%'
 virus:
-  display: '%group-color%Virus'
-  description: "Multiplies all Wither and Poison effects on the\naffected target."
+  display: '%group-color%病毒纏繞(Virus)'
+  description: "如果對方身上有凋零及中毒效果\naffected target."
   applies-to: 'Bow'
   type: 'BOW'
   group: 'UNIQUE'
@@ -1278,8 +1278,8 @@ virus:
         - 'POTION:WITHER:2:60 %victim%'
         - 'POTION:POISON:2:60 %victim%'
 antigravity:
-  display: '%group-color%Anti Gravity'
-  description: 'Super jump.'
+  display: '%group-color%反重力(Anti Gravity)'
+  description: '跳躍加成.'
   applies-to: 'Boots'
   type: 'EFFECT_STATIC'
   group: 'ELITE'
@@ -1296,8 +1296,8 @@ antigravity:
       effects:
         - 'POTION:JUMP:4'
 enderslayer:
-  display: '%group-color%Ender Slayer'
-  description: "Increases damage dealt to Enderman and Ender dragons."
+  display: '%group-color%終介殺手(Ender Slayer)'
+  description: "對終介使者及終介龍時，會造成額外傷害."
   applies-to: 'Weapons'
   type: 'ATTACK_MOB'
   group: 'ELITE'
@@ -1341,8 +1341,8 @@ enderslayer:
       effects:
         - 'INCREASE_DAMAGE:<random number>10-40</random number> %attacker%'
 reaper:
-  display: '%group-color%Reaper'
-  description: "A chance to give your opponent the\nWither and Blindness effects\nwhile dealing damage"
+  display: '%group-color%死神(Reaper)'
+  description: "有機率給予你的對手\n凋零以及致盲效果\n當你在攻擊"
   applies-to: 'Axe'
   type: 'ATTACK'
   group: 'ELITE'
@@ -1378,8 +1378,8 @@ reaper:
         - 'POTION:BLINDNESS:0:120 %victim%'
         - 'MESSAGE:&c&l** REAPER ** %victim%'
 netherslayer:
-  display: '%group-color%Nether Slayer'
-  description: "Increases damage dealt to Blazes and Zombie Pigmen."
+  display: '%group-color%地獄殺手(Nether Slayer)'
+  description: "增加對烈焰使者以及豬人的傷害."
   applies-to: 'Weapons'
   type: 'ATTACK_MOB'
   group: 'ELITE'
@@ -1423,8 +1423,8 @@ netherslayer:
       effects:
         - 'INCREASE_DAMAGE:<random number>10-40</random number> %attacker%'
 blind:
-  display: '%group-color%Blind'
-  description: "A chance of causing blindness\nwhen attacking."
+  display: '%group-color%致盲(Blind)'
+  description: "攻擊時有機率造成致盲效果."
   applies-to: 'Swords'
   type: 'ATTACK'
   group: 'ELITE'
@@ -1447,8 +1447,8 @@ blind:
       effects:
         - 'POTION:BLINDNESS:2:100 %victim%'
 shackle:
-  display: '%group-color%Shackle'
-  description: "Your attack pulls mob toward you."
+  display: '%group-color%鐵鏈腳鐐(Shackle)'
+  description: "攻擊時將生物拉到你身邊."
   applies-to: 'Swords'
   type: 'ATTACK_MOB'
   group: 'ELITE'
@@ -1467,8 +1467,8 @@ shackle:
       effects:
         - 'PULL_CLOSER:0.1 %victim%'
 cactus:
-  display: '%group-color%Cactus'
-  description: "Injures your attacker but does not\naffect your durability."
+  display: '%group-color%仙人掌(Cactus)'
+  description: "反傷對手但不影響裝甲耐久度   ."
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'ELITE'
@@ -1488,8 +1488,8 @@ cactus:
         - 'STOP_ATTACK'
         - 'ADD_HARM:<random number>1-3</random number> %attacker%'
 execute:
-  display: '%group-color%Execute'
-  description: "Damage buff when your target is at\nlow HP."
+  display: '%group-color%處決(Execute)'
+  description: "對低生命值的敵人\n造成大量傷害."
   applies-to: 'Swords'
   type: 'ATTACK;ATTACK_MOB'
   group: 'ELITE'
@@ -1553,8 +1553,8 @@ execute:
         - 'INCREASE_DAMAGE:<random number>10-50</random number> %attacker%'
         - 'MESSAGE:&b&l** EXECUTE ** %attacker%'
 frozen:
-  display: '%group-color%Frozen'
-  description: "Can cause slowness to attacker\nwhen defending."
+  display: '%group-color%暴雪(Frozen)'
+  description: "當你在抵擋傷害時\n對對手造成穩速效果."
   applies-to: 'Armor'
   type: 'DEFENSE;DEFENSE_MOB'
   group: 'ELITE'
@@ -1580,8 +1580,8 @@ frozen:
         - 'POTION:SLOW:1:100 %attacker%'
         - 'MESSAGE:&b&l** FROZEN ** %attacker%'
 paralyze:
-  display: '%group-color%Paralyze'
-  description: "Gives lightning effect and a chance\nfor slowness and slow swinging."
+  display: '%group-color%麻痺(Paralyze)'
+  description: "造成雷電轟擊效果\n並且有緩速及挖礦減速效果."
   applies-to: 'Swords'
   type: 'ATTACK'
   group: 'ELITE'
@@ -1625,7 +1625,7 @@ paralyze:
         - 'POTION:SLOW:1:100 %victim%'
         - 'POTION:SLOW_DIGGING:1:100 %victim%'
 poison:
-  display: '%group-color%Poison'
+  display: '%group-color%淬毒之刃(Poison)'
   description: 'A chance of giving poison effect.'
   applies-to: 'Weapon'
   type: 'ATTACK;ATTACK_MOB'
