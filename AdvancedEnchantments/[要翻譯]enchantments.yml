@@ -847,8 +847,8 @@ curse:
         - 'POTION:INCREASE_DAMAGE:1:80 %victim%'
         - 'POTION:DAMAGE_RESISTANCE:1:80 %victim%'
 endershift:
-  display: '%group-color%總結轉移(EnderShift)'
-  description: '低血量時給予兒童加速以及吸收效果.'
+  display: '%group-color%終界轉移(EnderShift)'
+  description: '低血量時給予移動加速以及吸收效果.'
   applies-to: 'Helmet, Boots'
   type: 'DEFENSE'
   group: 'UNIQUE'
@@ -2127,8 +2127,8 @@ smokebomb:
         - 'PARTICLE:CLOUD:200:3 %victim%'
         - 'POTION:BLINDNESS:2:120 %attacker%'
 infernal:
-  display: '%group-color%Infernal'
-  description: 'Explosive fire effect.'
+  display: '%group-color%地獄火焰(Infernal)'
+  description: '爆炸火焰效果.'
   applies-to: 'Bow'
   type: 'BOW;BOW_MOB'
   group: 'ELITE'
@@ -2155,8 +2155,8 @@ infernal:
         - 'PARTICLE:FLAME:3:20'
         - 'FLAME:6 %victim%'
 pummel:
-  display: '%group-color%Pummel'
-  description: "Chance to slow nearby enemy\nplayers for a short period."
+  display: '%group-color%捶打(Pummel)'
+  description: "有機率減慢附近敵人\n玩家的移動速度一段時間."
   applies-to: 'Axe'
   type: 'ATTACK;ATTACK_MOB'
   group: 'ELITE'
@@ -2182,8 +2182,8 @@ pummel:
         - 'POTION:SLOW:2:100 %victim%'
         - 'MESSAGE:&b&l** PUMMEL ** %victim%'
 shockwave:
-  display: '%group-color%Shockwave'
-  description: "Chance to push back your attacker\nwhen your health is low."
+  display: '%group-color%衝擊波動(Shockwave)'
+  description: "有機率反彈走攻擊者\n在你的血量比較低的時候."
   applies-to: 'Chestplate'
   type: 'DEFENSE'
   group: 'ELITE'
@@ -2226,8 +2226,8 @@ shockwave:
       effects:
         - 'PULL_AWAY:2.5 %attacker%'
 vampire:
-  display: '%group-color%Vampire'
-  description: "A chance to heal you for up to\n3hp a few seconds after you strike."
+  display: '%group-color%吸血鬼(Vampire)'
+  description: "有機率回血\n當你攻擊了敵人."
   applies-to: 'Swords'
   type: 'ATTACK'
   group: 'ELITE'
@@ -2253,8 +2253,8 @@ vampire:
         - 'WAIT:40'
         - 'ADD_HEALTH:<random number>1-6</random number>'
 farcast:
-  display: '%group-color%Farcast'
-  description: "Chance to knockback melee attackers\nby a couple of blocks when they hit you.\nIncreased chance of proccing when your health is low."
+  display: '%group-color%隔空擊退Farcast'
+  description: "有機會擊退近攻玩家\n當他們攻擊你時會向後擊退他們幾格.\n能夠在你血量低的時候增加生還機率."
   applies-to: 'Bow'
   type: 'BOW'
   group: 'ELITE'
@@ -2298,8 +2298,8 @@ farcast:
       effects:
         - 'PULL_AWAY:2.0 %attacker%'
 greatsword:
-  display: '%group-color%Greatsword'
-  description: "Multiplies damage against players who are\nwielding a BOW at the time they are hit."
+  display: '%group-color%巨劍(Greatsword)'
+  description: "當敵人正手持弓\n將會增加對他們的傷害."
   applies-to: 'Sword'
   type: 'ATTACK'
   group: 'ELITE'
@@ -2347,8 +2347,8 @@ greatsword:
         - 'INCREASE_DAMAGE:<random number>105-205</random number>'
         - 'MESSAGE:&b&l** GREATSWORD ** %attacker%'
 hardened:
-  display: '%group-color%Hardened'
-  description: 'Chance to recover durability when damaged.'
+  display: '%group-color%硬化修復(Hardened)'
+  description: '道具受損有機會回復耐久度.'
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'ELITE'
@@ -2371,8 +2371,8 @@ hardened:
       effects:
         - 'ADD_DURABILITY:-2 %victim%'
 rocketescape:
-  display: '%group-color%Rocket Escape'
-  description: 'Blast off into the air at low HP.'
+  display: '%group-color%火箭逃離(Rocket Escape)'
+  description: '當你血量低下時自動把你彈射到空中.'
   applies-to: 'Boots'
   type: 'DEFENSE'
   group: 'ELITE'
@@ -2401,8 +2401,8 @@ rocketescape:
       effects:
         - 'BOOST:50 %victim%'
 trickster:
-  display: '%group-color%Trickster'
-  description: "When hit you have a chance to teleport directly\nbehind your opponent and take them by surprise."
+  display: '%group-color%騙子(Trickster)'
+  description: "當你受傷，會有機會直接傳送到敵人的後面\n給他們一個驚喜."
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'ELITE'
@@ -2450,8 +2450,8 @@ trickster:
       effects:
         - 'TELEPORT_BEHIND %victim%'
 hijack:
-  display: '%group-color%Hijack'
-  description: "Chance to convert summoned enemy\nGuardians into your own when they\nare shot with an arrow."
+  display: '%group-color%劫持控制(Hijack)'
+  description: "有機會將對方的對方的怪物\n轉變成你的士兵\n當你擊中他們."
   applies-to: 'Bow'
   type: 'ATTACK_MOB'
   group: 'ELITE'
@@ -2480,8 +2480,8 @@ hijack:
       effects:
         - 'STEAL_GUARD'
 timber:
-  display: '%group-color%Timber'
-  description: 'Chance to break a tree in one hit'
+  display: '%group-color%伐木(Timber)'
+  description: '有機會直接將整棵樹砍下'
   applies-to: 'Axes'
   group: 'ULTIMATE'
   type: 'MINING'
@@ -2503,9 +2503,10 @@ timber:
       cooldown: 6
       effects:
         - 'BREAK_TREE'
+#ban      
 pickpocket:
-  display: '%group-color%Pickpocket'
-  description: 'Chance to steal in-game money whilst fighting.'
+  display: '%group-color%扒手(Pickpocket)'
+  description: '對戰時有機會偷走遊戲內金錢.'
   applies-to: 'Weapons'
   type: 'ATTACK'
   group: 'ULTIMATE'
@@ -2535,8 +2536,8 @@ pickpocket:
         - 'PLAY_SOUND_OUTLOUD:NOTE_STICKS:10'
         - 'MESSAGE:&9&l** PICKPOCKET ** &7(-&a%random% $&7) %victim%'
 distance:
-  display: '%group-color%Distance'
-  description: "Chance to distance yourself from your enemies\nand gain regeneration."
+  display: '%group-color%保持距離(Distance)'
+  description: "有機率將你和敵人彈開，保持距離\n並且提供回血效果."
   applies-to: 'Weapons'
   type: 'ATTACK'
   group: 'ULTIMATE'
@@ -2573,8 +2574,8 @@ distance:
         - 'POTION:REGENERATION:1:40 %attacker%'
         - 'MESSAGE:&a&l** DISTANCE ** &7(&o%attacker name%&7) %victim%'
 reinforced:
-  display: '%group-color% Reinforced'
-  description: "Take less damage when being hit from behind."
+  display: '%group-color% 背部強化(Reinforced)'
+  description: "當敵人從後面攻擊你，會造成較少傷害."
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'ULTIMATE'
@@ -2610,8 +2611,8 @@ reinforced:
       effects:
         - 'NEGATE_DAMAGE:<random number>1-35</random number>'
 cleave:
-  display: '%group-color%Cleave'
-  description: "Damages players within a radius\nthat increases with the level of enchant."
+  display: '%group-color%巨斧斬擊(Cleave)'
+  description: "傷害範圍內的所有玩家\nthat increases with the level of enchant."
   applies-to: 'Axes'
   type: 'ATTACK'
   group: 'ULTIMATE'
@@ -2661,8 +2662,8 @@ cleave:
         - 'ADD_HARM:<random number>2-3</random number> <aoe> radius=7 target=damageable </aoe>'
         - 'MESSAGE:&e&l** CLEAVE &7(%attacker name%)&e&l ** <aoe> radius=7 target=damageable </aoe>'
 angelic:
-  display: '%group-color%Angelic'
-  description: "Heals health when damaged."
+  display: '%group-color%天使降臨(Angelic)'
+  description: "當受到傷害，會回血."
   applies-to: 'Armor'
   type: 'DEFENSE;DEFENSE_MOB'
   group: 'ULTIMATE'
@@ -2700,8 +2701,8 @@ angelic:
         - 'ADD_HEALTH:<random number>1-4</random number> %victim%'
         - 'MESSAGE:&e&l** ANGELIC ** &7(&c+ %random%HP&7) %victim%'
 arrowlifesteal:
-  display: '%group-color%Arrow Lifesteal'
-  description: 'Chance to steal health from opponent.'
+  display: '%group-color%弓箭吸血(Arrow Lifesteal)'
+  description: '有機率從你的敵人身上吸血(Chance to steal health from opponent).'
   applies-to: 'Bows'
   type: 'BOW'
   group: 'ULTIMATE'
@@ -2735,8 +2736,8 @@ arrowlifesteal:
       effects:
         - 'STEAL_HEALTH:<random number>1-4</random number>'
 arrowdeflect:
-  display: '%group-color%Arrow Deflect'
-  description: "Chance to prevent enemy arrow from dealing damage."
+  display: '%group-color%弓箭格擋(Arrow Deflect)'
+  description: "有機率格擋敵人的弓箭造成的傷害."
   applies-to: 'Armor'
   type: 'DEFENSE_BOW'
   group: 'ULTIMATE'
@@ -2768,8 +2769,8 @@ arrowdeflect:
         - 'MESSAGE:&e&l* ARROW DEFLECT * %victim%'
         - 'STOP_ATTACK'
 arrowbreak:
-  display: '%group-color%Arrow Break'
-  description: "Chance for arrows to bounce off\nand do no damage to you whenever\nyou are wielding an axe with this\nenchantment on it."
+  display: '%group-color%弓箭擊毀(Arrow Break)'
+  description: "有機率令弓箭彈走\n並對你做成0傷害\n您需要手上持有這個斧頭\n並且有這個附魔."
   applies-to: 'Axe'
   type: 'DEFENSE_BOW'
   group: 'ULTIMATE'
@@ -2819,8 +2820,8 @@ arrowbreak:
         - 'MESSAGE:&e&l** ARROW BREAK ** %victim%'
         - 'PLAY_SOUND:ITEM_BREAK:2 %victim%'
 assassin:
-  display: '%group-color%Assassin'
-  description: "The closer you are to your enemy,\n the moredamage you deal (up to 1.25x).\n However, ifyou are more than 2\n blocks away, you will deal LESS\ndamage than normal."
+  display: '%group-color%刺客守則(Assassin)'
+  description: "當你更加接近敵人,\n 你造成的傷害會更多 (最多 1.25x).\n 不過, 如果你離對方 2 格或更遠\n 您會造成比正常更少的傷害."
   applies-to: 'Sword'
   type: 'ATTACK'
   group: 'ULTIMATE'
@@ -2853,8 +2854,8 @@ assassin:
       effects:
         - 'DISTANCE_DAMAGE:3:1 %attacker%'
 blessed:
-  display: '%group-color%Blessed'
-  description: 'A chance of removing debuffs.'
+  display: '%group-color%祝福(Blessed)'
+  description: '有機率移除負面效果.'
   applies-to: 'Axes'
   type: 'ATTACK'
   group: 'ULTIMATE'
@@ -2914,8 +2915,8 @@ blessed:
         - 'CURE_PERMANENT:SLOW_DIGGING %attacker%'
         - 'MESSAGE:&e&l** BLESSED ** %attacker%'
 corrupt:
-  display: '%group-color%Corrupt'
-  description: "Deals damage over time."
+  display: '%group-color%腐敗(Corrupt)'
+  description: "隔一段時間會慢慢受到傷害."
   applies-to: 'Axes'
   type: 'ATTACK'
   group: 'ULTIMATE'
@@ -2959,8 +2960,8 @@ corrupt:
         - 'WAIT:40'
         - 'ADD_HARM:<random number>2-3</random number> %victim%'
 ragdoll:
-  display: '%group-color%Ragdoll'
-  description: "Whenever you take damage\nyou are pushed far back."
+  display: '%group-color%主動迴避(Ragdoll)'
+  description: "當你受到傷害\n會主動向後彈走."
   applies-to: 'Armor'
   type: 'DEFENSE;DEFENSE_MOB'
   group: 'ULTIMATE'
@@ -2988,8 +2989,8 @@ ragdoll:
       effects:
         - 'PULL_AWAY:0.5 %victim%'
 block:
-  display: '%group-color%Block'
-  description: "A chance to negate an attack and deal up to 4 damage back."
+  display: '%group-color%格擋(Block)'
+  description: "有紀錄格擋傷害並且造成反擊傷害."
   applies-to: 'Swords'
   type: 'DEFENSE;DEFENSE_MOB'
   group: 'ULTIMATE'
@@ -3015,8 +3016,8 @@ block:
         - 'NEGATE_DAMAGE:50 %victim%'
         - 'ADD_HARM:<random number>1-4</random number> %attacker%'
 detonate:
-  display: '%group-color%Detonate'
-  description: "Chance to break in 3x3 area."
+  display: '%group-color%起爆(Detonate)'
+  description: "有機率破壞3x3空間區域."
   applies-to: 'Pickaxes and shovels'
   type: 'MINING'
   group: 'ULTIMATE'
@@ -3061,7 +3062,7 @@ detonate:
       effects:
         - 'TRENCH:3'
 dodge:
-  display: '%group-color%Dodge'
+  display: '%group-color%閃避(Dodge)'
   description: "Chance to dodge physical enemy\nattacks, increased chance if\nsneaking."
   applies-to: 'Armor'
   type: 'DEFENSE'
@@ -3115,8 +3116,8 @@ dodge:
         - 'MESSAGE:&e&l*DODGE* %victim%'
         - 'PLAY_SOUND:BAT_TAKEOFF:0.7 %victim%'
 enrage:
-  display: '%group-color%Enrage'
-  description: 'Deal more damage on low HP.'
+  display: '%group-color%憤怒激昂(Enrage)'
+  description: '血量低的時候造成更高傷害.'
   applies-to: 'Swords'
   type: 'ATTACK'
   group: 'ULTIMATE'
@@ -3145,8 +3146,8 @@ enrage:
       effects:
         - 'ADD_HARM:<random number>1-4</random number> %victim%'
 guardians:
-  display: '%group-color%Guardians'
-  description: "A chance to spawn iron golems to\nassist you and watch over you."
+  display: '%group-color%守護者(Guardians)'
+  description: "有機率召喚鐵巨人\n協助並保護你."
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'ULTIMATE'
@@ -3213,8 +3214,8 @@ guardians:
         - 'GUARD:IRON_GOLEM:%victim%'
         - 'GUARD:IRON_GOLEM:%victim%'
 iceaspect:
-  display: '%group-color%Ice Aspect'
-  description: "A chance of causing the slowness\neffect on your enemy."
+  display: '%group-color%冰霜元素(Ice Aspect)'
+  description: "有機率對敵人造成緩速效果."
   applies-to: 'Swords'
   type: 'ATTACK;ATTACK_MOB'
   group: 'ULTIMATE'
@@ -3237,8 +3238,8 @@ iceaspect:
       effects:
         - 'POTION:SLOW:1:100 %victim%'
 implants:
-  display: '%group-color%Implants'
-  description: "Chance to passively heals +1 health\nand restores +1 hunger every few seconds"
+  display: '%group-color%光合作用(Implants)'
+  description: "有機率被動回復血量以及飽食度\n"
   applies-to: 'Helmets'
   type: 'REPEATING'
   time: 5
@@ -3274,8 +3275,8 @@ obsidianshield:
       effects:
         - 'POTION:FIRE_RESISTANCE:0'
 demonic:
-  display: '%group-color%Demonic'
-  description: "A chance to remove fire resistance from your enemy."
+  display: '%group-color%惡魔阻礙(Demonic)'
+  description: "有機率移除走的人的抗火效果."
   applies-to: 'Armor'
   type: 'ATTACK'
   group: 'ULTIMATE'
@@ -3301,8 +3302,8 @@ demonic:
         - 'CURE:FIRE_RESISTANCE %victim%'
         - 'CURE_PERMANENT:FIRE_RESISTANCE %victim%'
 piercing:
-  display: '%group-color%Piercing'
-  description: 'Inflicts more damage.'
+  display: '%group-color%穿刺(Piercing)'
+  description: '造成更多傷害.'
   applies-to: 'Bows'
   type: 'BOW'
   group: 'ULTIMATE'
@@ -3336,8 +3337,8 @@ piercing:
       effects:
         - 'INCREASE_DAMAGE:<random number>50-150</random number> %victim%'
 marksman:
-  display: '%group-color%Marksman'
-  description: 'Increases damage dealt with bows.'
+  display: '%group-color%(射手Marksman)'
+  description: '增加弓造成的傷害.'
   applies-to: 'Armor'
   type: 'ATTACK'
   group: 'ULTIMATE'
@@ -3373,8 +3374,8 @@ marksman:
       effects:
         - 'INCREASE_DAMAGE:<random number>50-150</random number> %victim%'
 disappear:
-  display: '%group-color%Disappear'
-  description: "Chance to become invisible when\nlow on health."
+  display: '%group-color%消失(Disappear)'
+  description: "低血量時有機率隱形."
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'ULTIMATE'
@@ -3410,8 +3411,8 @@ disappear:
       effects:
         - 'POTION:INVISIBILITY:2:120 %victim%'
 disintegrate:
-  display: '%group-color%Disintegrate'
-  description: "Chance to deal extra durability damage to\nall enemy armor with every attack."
+  display: '%group-color%瓦解(Disintegrate)'
+  description: "有機率對所有攻擊你的人\n身上的裝備造成額外損耗."
   applies-to: 'Swords'
   type: 'ATTACK'
   group: 'ULTIMATE'
@@ -3439,8 +3440,8 @@ disintegrate:
       effects:
         - 'DAMAGE_ARMOR:2 %victim%'
 dominate:
-  display: '%group-color%Dominate'
-  description: "Chance to weaken enemy players when attacked,\ncausing them to deal less damage."
+  display: '%group-color%主導(Dominate)'
+  description: "有機會弱化對方\n."
   applies-to: 'Swords'
   type: 'DEFENSE;DEFENSE_MOB'
   group: 'ULTIMATE'
@@ -3468,8 +3469,8 @@ dominate:
       effects:
         - 'POTION:WEAKNESS:0:80 %attacker%'
 arsonist:
-  display: '%group-color%Arsonist'
-  description: "Chance to deal more damage\nwhilst on fire"
+  display: '%group-color%趨炎附勢(Arsonist)'
+  description: "當對方著火時\n攻擊造成更多傷害"
   applies-to: 'Swords'
   type: 'ATTACK'
   group: 'ULTIMATE'
