@@ -3499,8 +3499,8 @@ arsonist:
       effects:
         - 'ADD_HARM:3 %victim%'
 enderwalker:
-  display: '%group-color%Ender Walker'
-  description: "Chance to cure Wither and Poison when attacked\nnand heal at high levels."
+  display: '%group-color%終界行者(Ender Walker)'
+  description: "當受到攻擊有機率治愈凋零及中毒效果\nnand heal at high levels."
   applies-to: 'Boots'
   type: 'DEFENSE'
   group: 'ULTIMATE'
@@ -3540,8 +3540,8 @@ enderwalker:
         - 'CURE:POISON %victim%'
         - 'ADD_HEALTH:<random number>1-4</random number> %victim%'
 eagleeye:
-  display: '%group-color%Eagle Eye'
-  description: "Chance to deal 1-4 durability damage to\nALL armor pieces of enemy player."
+  display: '%group-color%鷹眼(Eagle Eye)'
+  description: "有機率對敵人的所有裝甲\n造成 1-4 durability damage to\nALL armor pieces of enemy player."
   applies-to: 'Bow'
   type: 'BOW'
   group: 'ULTIMATE'
@@ -3575,8 +3575,8 @@ eagleeye:
       effects:
         - 'DAMAGE_ARMOR:<random number>1-4</random number> %victim%'
 annihilate:
-  display: '%group-color%Annihilate'
-  description: "Demolish your opponent's armour quicker!"
+  display: '%group-color%殲滅者(Annihilate)'
+  description: "快速破壞對手的裝甲!"
   applies-to: 'Axes'
   type: 'ATTACK'
   group: 'ULTIMATE'
@@ -3614,8 +3614,8 @@ annihilate:
       effects:
         - 'DAMAGE_ARMOR:4 %victim%'
 heavy:
-  display: '%group-color%Heavy'
-  description: "Decreases damage from enemy bows\nby 2% per level."
+  display: '%group-color%重力(Heavy)'
+  description: "降低敵人造成的弓箭傷害\n每等級 +2%."
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'ULTIMATE'
@@ -3658,8 +3658,8 @@ heavy:
       effects:
         - 'REMOVE_DAMAGE:10 %victim%'
 hellfire:
-  display: '%group-color%Hellfire'
-  description: "All arrows shot by you turn\ninto explosive fireballs when\n in contact with the enemy."
+  display: '%group-color%地獄火焰(Hellfire)'
+  description: "所有從你射出的弓箭\n當擊中目標的時候\n會轉變成爆炸火球."
   applies-to: 'Bow'
   type: 'BOW'
   group: 'ULTIMATE'
@@ -3693,8 +3693,8 @@ hellfire:
       effects:
         - 'FIREBALL %victim%'
 longbow:
-  display: '%group-color%Longbow'
-  description: "Greatly increases damage dealt\nto enemy players that have\na bow in their hands."
+  display: '%group-color%長弓(Longbow)'
+  description: "大幅增加對手上持有箭的人造成的傷害."
   applies-to: 'Bow'
   type: 'BOW'
   group: 'ULTIMATE'
@@ -3731,8 +3731,8 @@ longbow:
       effects:
         - 'INCREASE_DAMAGE:<random number>50-100</random number> %attacker%'
 tank:
-  display: '%group-color%Tank'
-  description: "Chance to decreases damage from enemy\naxes by 2% per level."
+  display: '%group-color%坦克忍耐(Tank)'
+  description: "有機率降低敵人使用斧頭造成的傷害\n每等級 2% ."
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'ULTIMATE'
@@ -3768,8 +3768,8 @@ tank:
       effects:
         - 'REMOVE_DAMAGE:8 %victim%'
 unfocus:
-  display: '%group-color%Unfocus'
-  description: "Chance to Unfocus target player,\nreducing their out going bow damage\nby 50% for up to 10 seconds."
+  display: '%group-color%專注分散(Unfocus)'
+  description: "降低敵人的專注力\n降低他們發射弓箭所造成的傷害\n50% 最多長達10秒."
   applies-to: 'Bow'
   type: 'BOW'
   group: 'ULTIMATE'
@@ -3823,8 +3823,8 @@ unfocus:
         - 'WAIT:105'
         - 'MESSAGE:&a&l** YOU''VE REGAINED FOCUS ** %victim%'
 valor:
-  display: '%group-color%Valor'
-  description: "Chance to reduces incoming damage while\nwielding a sword by up to 22% at max level."
+  display: '%group-color%勇氣(Valor)'
+  description: "有機率減少承受的傷害\n當你在揮舞一把劍\n最高可以 22%."
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'ULTIMATE'
@@ -3866,6 +3866,7 @@ valor:
         - '%attacker is holding% contains SWORD : %allow%'
       effects:
         - 'REMOVE_DAMAGE:<random number>18-22</random number> %victim%'
+        #here
 pacify:
   display: '%group-color%Pacify'
   description: "A chance to pacify your target,\ndealing 1-4 damage and\nstopping their next attack on you."
