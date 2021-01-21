@@ -3866,10 +3866,9 @@ valor:
         - '%attacker is holding% contains SWORD : %allow%'
       effects:
         - 'REMOVE_DAMAGE:<random number>18-22</random number> %victim%'
-        #here
 pacify:
-  display: '%group-color%Pacify'
-  description: "A chance to pacify your target,\ndealing 1-4 damage and\nstopping their next attack on you."
+  display: '%group-color%安撫(Pacify)'
+  description: "有機率安撫你的目標\n造成 1-4 傷害\n並且停止他們的下一輪攻擊."
   applies-to: 'Bow'
   type: 'BOW;BOW_MOB'
   group: 'ULTIMATE'
@@ -3902,8 +3901,8 @@ pacify:
         - 'STOP_ATTACK'
         - 'ADD_HARM:<random number>1-4</random number> %victim%'
 metaphysical:
-  display: '%group-color%Metaphysical'
-  description: "A chance to be cured of\nSlowness when attacked.\nAt max level, you will only be\naffected approx. 10% of the time."
+  display: '%group-color%精神抖擻(Metaphysical)'
+  description: "受到傷害時有機率移除移動減速效果.\n最高等級時\n你只會收到10%時間的影響."
   applies-to: 'Boots'
   type: 'DEFENSE'
   group: 'ULTIMATE'
@@ -3927,8 +3926,8 @@ metaphysical:
       effects:
         - 'CURE:SLOW %victim%'
 creeperarmor:
-  display: '%group-color%Creeper Armor'
-  description: "Chance to be immune to explosive damage, at\nhigher levels you have a chance to heal."
+  display: '%group-color%苦力怕裝甲(Creeper Armor)'
+  description: "有機率免疫爆炸傷害\n高等級的附魔更加有機會治癒你."
   applies-to: 'Armor'
   type: 'EXPLOSION'
   group: 'ULTIMATE'
@@ -3949,8 +3948,8 @@ creeperarmor:
         - 'STOP_ATTACK'
         - 'ADD_HEALTH:<random number>1-2</random number>'
 spirits:
-  display: '%group-color%Spirits'
-  description: "Chance to spawn blazes that heal\nyourself and your allies in combat."
+  display: '%group-color%精靈守護(Spirits)'
+  description: "有機率召喚一些可以治癒你的烈焰使者\n能夠在戰鬥中回復你和你同伴的血量."
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'ULTIMATE'
@@ -4048,8 +4047,8 @@ spirits:
         - 'GUARD:BLAZE:%victim%'
         - 'POTION:REGENERATION:0:60  <aoe> radius=5 target=undamageable </aoe>'
 bleed:
-  display: '%group-color%Bleed'
-  description: "Applies bleed stacks to enemies\nthat decrease their movement speed."
+  display: '%group-color%流血(Bleed)'
+  description: "附加流血效果在敵人身上\n並且降低他們的移動速度."
   applies-to: 'Axes'
   type: 'ATTACK'
   group: 'ULTIMATE'
@@ -4116,9 +4115,10 @@ bleed:
         - 'ADD_HARM:<random number>1-3</random number> %victim%'
         - 'WAIT:20'
         - 'ADD_HARM:<random number>1-3</random number> %victim%'
+        
 lavawalker:
-  display: '%group-color%Lava Walker'
-  description: 'Walk on Lava.'
+  display: '%group-color%岩漿行者(Lava Walker)'
+  description: '可以在岩漿上行走.'
   applies-to: 'Boots'
   type: 'EFFECT_STATIC'
   group: 'LEGENDARY'
@@ -4129,8 +4129,8 @@ lavawalker:
       effects:
         - 'LAVA_WALKER'
 impale:
-  display: '%group-color%Impale'
-  description: "Chance to deal HUGE amounts of damage to your opponent, causing\nSlowness V for some time"
+  display: '%group-color%穿刺(Impale)'
+  description: "有機率造成極大程度的傷害攻擊你的對手\n並且一段時間造成減速"
   applies-to: 'Bow'
   type: 'BOW'
   group: 'LEGENDARY'
@@ -4163,8 +4163,8 @@ impale:
         - 'DOUBLE_DAMAGE'
         - 'POTION:SLOW:4:80 %victim%'
 protection:
-  display: '%group-color%Protection'
-  description: "Automatically heals and cures\nall nearby faction allies."
+  display: '%group-color%保護(Protection)'
+  description: "自動治癒並且為你的同伴回血."
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'LEGENDARY'
@@ -4217,8 +4217,8 @@ protection:
         - 'CURE:WITHER <aoe> radius=10 target=undamageable </aoe>'
         - 'MESSAGE:&e&l*** &eProtection &e&l*** &7(%victim name%) <aoe> radius=10 target=undamageable </aoe>'
 torrent:
-  display: '%group-color%Torrent'
-  description: "Deal increased damage while in water."
+  display: '%group-color%激流(Torrent)'
+  description: "在水中的時候能夠增加傷害."
   applies-to: 'Boots'
   type: 'ATTACK'
   group: 'LEGENDARY'
@@ -4254,8 +4254,8 @@ torrent:
       effects:
         - 'DOUBLE_DAMAGE'
 judgement:
-  display: '%group-color%Judgement'
-  description: "Chance of dealing poison damage to\nyour target and adding regeneration to yourself."
+  display: '%group-color%審判(Judgement)'
+  description: "有機率對你的敵人造成中毒效果\n並且給予你自己回血效果."
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'LEGENDARY'
@@ -4293,8 +4293,8 @@ judgement:
         - POTION:POISON:0:100 %attacker%
         - POTION:REGENERATION:1:100 %victim%
 surprise:
-  display: '%group-color%Surprise'
-  description: "Chance to teleport behind your opponent\nand take them by surprise."
+  display: '%group-color%驚嚇(Surprise)'
+  description: "有機率傳送到您的對手後面\nand take them by surprise."
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'LEGENDARY'
@@ -4326,8 +4326,8 @@ surprise:
         - 'MESSAGE:&6&l** SURPRISE ** %victim%'
         - 'TELEPORT_BEHIND %victim%'
 stun:
-  display: '%group-color%Stun'
-  description: "Chance to slow opponent, make them\nfeel weak, and remove slowness from you."
+  display: '%group-color%暈眩(stun)'
+  description: "有機率降低你的對手移動速度\n令他們覺得變弱\n並且移除您身上可能有的移動減速效果."
   applies-to: 'Weapons'
   type: 'ATTACK'
   group: 'LEGENDARY'
@@ -4363,8 +4363,8 @@ stun:
         - 'POTION:WEAKNESS:0:80 %victim%'
         - 'MESSAGE:&c&l** STUNNED ** %victim%'
 unholy:
-  display: '%group-color%Unholy'
-  description: "Chance to give weakness and wither to your attacker."
+  display: '%group-color%邪惡騷擾(Unholy)'
+  description: "有機率給予攻擊你的敵人虛弱以及凋零效果."
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'LEGENDARY'
@@ -4402,8 +4402,8 @@ unholy:
         - POTION:WITHER:1:60 %attacker%
         - POTION:WEAKNESS:0:100 %attacker%
 quiver:
-  display: '%group-color%Quiver'
-  description: 'Chance to fling your attackers into the air.'
+  display: '%group-color%顫動(Quiver)'
+  description: '有機率將你的敵人擊飛到空中.'
   applies-to: 'Boots'
   type: 'DEFENSE'
   group: 'LEGENDARY'
@@ -4441,8 +4441,8 @@ quiver:
       effects:
         - 'PULL_AWAY:3.5'
 fat:
-  display: '%group-color%Fat'
-  description: "Chance to receives increased damage negation\nwhen damaged, as well as absorption at higher levels."
+  display: '%group-color%肥胖(Fat)'
+  description: "有機率在收到攻擊時無視一定的傷害\n升級附魔等級."
   applies-to: 'Chestplate'
   type: 'DEFENSE'
   group: 'LEGENDARY'
@@ -4490,8 +4490,8 @@ fat:
         - 'MESSAGE:&6&l** FAT ** %victim%'
         - 'POTION:ABSORPTION:5:100 %victim%'
 hex:
-  display: '%group-color%Hex'
-  description: "Once a target is affected by Hex,\na portion of all their outgoing damage is decreased.\n3-7 damage is reflected back to them."
+  display: '%group-color%迷惑(Hex)'
+  description: "當一個目標正被迷惑\n他們所造成的傷害在一段時間之中會減少\n3-7 傷害會反傷給他們."
   applies-to: 'Axes'
   type: 'ATTACK'
   group: 'LEGENDARY'
@@ -4523,8 +4523,8 @@ hex:
         - 'DECREASE_DAMAGE:<random number>10-50</random number> %attacker%'
         - 'ADD_HARM:<random number>3-7</random number> %victim%'
 barbarian:
-  display: '%group-color%Barbarian'
-  description: 'Chance to inflicts more axe damage.'
+  display: '%group-color%狂戰士(Barbarian)'
+  description: '有機率造成更多的斧頭傷害.'
   applies-to: 'Axes'
   type: 'ATTACK'
   group: 'LEGENDARY'
@@ -4560,8 +4560,8 @@ barbarian:
       effects:
         - 'INCREASE_DAMAGE:<random number>25-100</random number> %victim%'
 clarity:
-  display: '%group-color%Clarity'
-  description: 'Cure blindness when attacked.'
+  display: '%group-color%清晰(Clarity)'
+  description: '移除致盲效果當你受到傷害.'
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'LEGENDARY'
@@ -4578,8 +4578,8 @@ clarity:
       effects:
         - 'CURE:BLINDNESS %victim%'
 deathbringer:
-  display: '%group-color%Deathbringer'
-  description: 'Chance to deal double damage.'
+  display: '%group-color%死亡使者(Deathbringer)'
+  description: '有機率造成雙倍傷害.'
   applies-to: 'Armor'
   type: 'ATTACK'
   group: 'LEGENDARY'
@@ -4602,8 +4602,8 @@ deathbringer:
       effects:
         - 'DOUBLE_DAMAGE'
 doublestrike:
-  display: '%group-color%Double Strike'
-  description: 'A chance to strike twice.'
+  display: '%group-color%雙重打擊'
+  description: '有機率打擊兩次.'
   applies-to: 'Swords'
   type: 'ATTACK'
   group: 'LEGENDARY'
@@ -4632,8 +4632,8 @@ doublestrike:
         - 'ADD_HARM:%damage% %victim%'
         - 'MESSAGE:&6&l** DOUBLE STRIKE ** %victim%'
 drunk:
-  display: '%group-color%Drunk'
-  description: "Slowness and slow swinging with\na chance to get strength."
+  display: '%group-color%酗酒(Drunk)'
+  description: "獲得移動減速，挖礦減速\n以及攻擊傷害加成."
   applies-to: 'Helmet'
   type: 'EFFECT_STATIC'
   group: 'LEGENDARY'
