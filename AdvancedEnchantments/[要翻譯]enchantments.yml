@@ -4661,8 +4661,8 @@ drunk:
         - 'POTION:INCREASE_DAMAGE:2'
         - 'POTION:SLOW:2'
 enlighted:
-  display: '%group-color%Enlighted'
-  description: 'Can heal hearts while taking damage.'
+  display: '%group-color%傷害轉化(Enlighted)'
+  description: '受傷害的時候可以回血.'
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'LEGENDARY'
@@ -4685,8 +4685,8 @@ enlighted:
       effects:
         - 'ADD_HEALTH:<random number>1-3</random number> %victim%'
 gears:
-  display: '%group-color%Gears'
-  description: 'Added speed when equipped.'
+  display: '%group-color%精良裝備(Gears)'
+  description: '裝備時增加移動速度.'
   applies-to: 'Boots'
   type: 'EFFECT_STATIC'
   group: 'LEGENDARY'
@@ -4703,8 +4703,8 @@ gears:
       effects:
         - 'POTION:SPEED:2'
 killaura:
-  display: '%group-color%Kill Aura'
-  description: 'Chance to kill multiple monsters\nin a stack each death event.'
+  display: '%group-color%死亡光環(Kill Aura)'
+  description: '每次死亡的時候會有機率擊殺多隻怪物.'
   applies-to: 'Swords'
   group: 'LEGENDARY'
   type: 'ATTACK_MOB'
@@ -4737,8 +4737,8 @@ killaura:
       effects:
         - 'KILL_MOB:<random number>3-5</random number> %victim%'
 inquisitive:
-  display: '%group-color%Inquisitive'
-  description: 'Chance to increase EXP drops from mobs.'
+  display: '%group-color%劍道錘煉(Inquisitive)'
+  description: '增加結石怪物時候掉落的經驗值.'
   applies-to: 'Swords'
   type: 'KILL_MOB'
   group: 'LEGENDARY'
@@ -4766,8 +4766,8 @@ inquisitive:
       effects:
         - 'EXP:<math>%exp% * (1.0 + 0.25 * %level%)</math> %victim%'
 inversion:
-  display: '%group-color%Inversion'
-  description: "Damage dealt to you has a chance to be\nblocked and heal you for 1-5 HP."
+  display: '%group-color%傷害反轉(Inversion)'
+  description: "對你做成的傷害有幾會被格擋\n並且會回你的血."
   applies-to: 'Swords'
   type: 'DEFENSE'
   group: 'LEGENDARY'
@@ -4799,8 +4799,8 @@ inversion:
         - 'STOP_ATTACK'
         - 'ADD_HEALTH:<random number>1-5</random number> %victim%'
 lifesteal:
-  display: '%group-color%Lifesteal'
-  description: "A chance to steal health when\nattacking."
+  display: '%group-color%吸血(Lifesteal)'
+  description: "攻擊的時候\n有機會從對手中吸血."
   applies-to: 'Swords'
   type: 'ATTACK'
   group: 'LEGENDARY'
@@ -4833,8 +4833,8 @@ lifesteal:
       effects:
         - 'STEAL_HEALTH:<random number>1-5</random number> %attacker%'
 overload:
-  display: '%group-color%Overload'
-  description: 'Permanent increase in hearts.'
+  display: '%group-color%生命超載(Overload)'
+  description: '永久增加血量.'
   applies-to: 'Armor'
   type: 'EFFECT_STATIC'
   group: 'LEGENDARY'
@@ -4851,8 +4851,8 @@ overload:
       effects:
         - 'POTION:HEALTH_BOOST:2'
 rage:
-  display: '%group-color%Rage'
-  description: "For every combo hit you land,\nchance to do 0.5 heart damage per combo\nto your opponent.\nUp to 5 max combo hits."
+  display: '%group-color%攻擊堆疊(Rage)'
+  description: "每一次攻擊累計一次堆疊\n堆疊會造成額外的傷害\n最多每次5個堆疊."
   applies-to: 'Weapon'
   type: 'ATTACK'
   group: 'LEGENDARY'
@@ -4909,8 +4909,8 @@ rage:
         - 'ADD_HARM:%combo% %victim%'
         - 'BLOOD %victim%'
 silence:
-  display: '%group-color%Silence'
-  description: 'Chance to stop activation of your enemy''s custom armor enchants.'
+  display: '%group-color%沉靜(Silence)'
+  description: '有機率暫時阻止敵人的自訂附魔效果.'
   applies-to: 'Swords'
   type: 'ATTACK'
   group: 'LEGENDARY'
@@ -5042,8 +5042,8 @@ silence:
         - 'DISABLE_ACTIVATION:paladinarmored:7 %victim%'
         - 'MESSAGE:&5&l* SILENCED&r &7[7s] &5&l* %victim%'
 armored:
-  display: '%group-color%Armored'
-  description: "Decreases damage from enemy\nswords by 2% per level."
+  display: '%group-color%傷害抵抗(Armored)'
+  description: "降低來自敵人的傷害\n每等級2%."
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'LEGENDARY'
@@ -5079,8 +5079,8 @@ armored:
       effects:
         - 'REMOVE_DAMAGE:8 %attacker%'
 exterminator:
-  display: '%group-color%Exterminator'
-  description: "When attacked, chance to temporarily disables\nenemy ability to use Undead Ruse, Gaurdians,\nand Spirits."
+  display: '%group-color%驅除法術(Exterminator)'
+  description: "被攻擊的時候，有機會暫時取消對方或附近敵人的\n死靈操控,\n守護者,\n精靈守護\n效果."
   applies-to: 'Leggings'
   type: 'DEFENSE'
   group: 'LEGENDARY'
@@ -5109,8 +5109,8 @@ exterminator:
         - 'DISABLE_ACTIVATION:guardians:8 %attacker%'
         - 'DISABLE_ACTIVATION:spirits:8 %attacker%'
 blacksmith:
-  display: '%group-color%Blacksmith'
-  description: "Chance to heal your most damaged\npiece of armor by 1-2 durability whenever\nyou hit a player, but when it procs your\nattack will only deal 50% of the\nnormal damage."
+  display: '%group-color%鐵匠(Blacksmith)'
+  description: "有機率至回復你身上最低耐久度的一件裝備\n當你擊中一個玩家\n但是發動效能的時候你造成的傷口只會有50%."
   applies-to: 'Axe'
   type: 'ATTACK'
   group: 'LEGENDARY'
