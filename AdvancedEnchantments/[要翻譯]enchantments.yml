@@ -2990,7 +2990,7 @@ ragdoll:
         - 'PULL_AWAY:0.5 %victim%'
 block:
   display: '%group-color%格擋(Block)'
-  description: "有紀錄格擋傷害並且造成反擊傷害."
+  description: "有機率格擋傷害並且造成反擊傷害."
   applies-to: 'Swords'
   type: 'DEFENSE;DEFENSE_MOB'
   group: 'ULTIMATE'
@@ -4738,7 +4738,7 @@ killaura:
         - 'KILL_MOB:<random number>3-5</random number> %victim%'
 inquisitive:
   display: '%group-color%劍道錘煉(Inquisitive)'
-  description: '增加結石怪物時候掉落的經驗值.'
+  description: '增加擊殺怪物時候掉落的經驗值.'
   applies-to: 'Swords'
   type: 'KILL_MOB'
   group: 'LEGENDARY'
@@ -5673,7 +5673,7 @@ bewitchedhex:
         - 'ADD_HARM:<random number>5-10</random number> %victim%'
 mightycleave:
   display: '%group-color%強烈巨斧斬擊(MightyCleave)'
-  description: "有機率對4格範圍以內造成最高8點傷害.\n需要 巨斧斬擊 VII to apply."
+  description: "有機率對4格範圍以內造成最高8點傷害.\n需要 巨斧斬擊 VII 才能生效."
   applies-to: 'Axes'
   type: 'ATTACK'
   group: 'HEROIC'
@@ -5717,8 +5717,8 @@ mightycleave:
         - 'ADD_HARM:<random number>6-8</random number> <aoe> radius=5 target=damageable </aoe>'
         - 'MESSAGE:&d&l** MIGHTY CLEAVE &7(%attacker name%)&d&l ** <aoe> radius=5 target=damageable </aoe>'
 mightycactus:
-  display: '%group-color%Mighty Cactus'
-  description: "Heroic Enchantment. Chance to stop enemy\nattack and injures your attacker but does not\naffect your durability. Requires Cactus II to apply."
+  display: '%group-color%仙人掌反甲(MightyCactus)'
+  description: "英雄附魔. 有機率停止敵人傷害\n並且反擊你的敵人同時不影響耐久度\n需要 仙人掌 II 才能生效."
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'HEROIC'
@@ -5746,8 +5746,8 @@ mightycactus:
         - 'ADD_HARM:<random number>2-5</random number> %attacker%'
         - 'MESSAGE:&d&l** MIGHTY CACTUS ** &7(%victim name%)'
 guidedrocketescape:
-  display: '%group-color%Guided Rocket Escape'
-  description: "Chance to blast off into the air at low health\nand briefly gain flight for (level x 1s).\nRequires Rocket Escape III to apply."
+  display: '%group-color%引導火箭逃離(GuidedRocketEscape)'
+  description: "當你血量低下時自動把你彈射到空中\n並且給予飛行效果 (等級 x 1秒).\n需要 火箭逃離 III 才能生效."
   applies-to: 'Boots'
   type: 'DEFENSE'
   group: 'HEROIC'
@@ -5785,8 +5785,8 @@ guidedrocketescape:
         - 'BOOST:60 %victim%'
         - 'MESSAGE:&d&l** GUIDED ROCKET ESCAPE **%victim%'
 soulhardened:
-  display: '%group-color%Soul Hardened'
-  description: "Up to 50% chance to block enemy soul trap, armor takes less durability damage.\nRequires Hardened III to apply."
+  display: '%group-color%靈魂硬化修復(Soul Hardened)'
+  description: "最高有 50% 機會能夠抵擋敵人的 靈魂圈套, 裝甲會消耗較少耐久度.\n需要 硬化修復 III 才能生效."
   applies-to: 'Armor'
   type: 'EFFECT_STATIC'
   group: 'HEROIC'
@@ -5818,8 +5818,8 @@ soulhardened:
         - 'DISABLE_ACTIVATION:soultrap:5 %attacker%'
         - 'ADD_DURABILITY:-5 %victim%'
 polymorphicmetaphysical:
-  display: '%group-color%Polymorphic Metaphysical'
-  description: "A chance to be cured of Slowness when attacked.\nAt max level, you will only be\naffected approx. 10% of the time.\nRequires Metaphysical IV to apply."
+  display: '%group-color%意志清晰(Polymorphic Metaphysical)'
+  description: "受到傷害時有機率移除移動減速效果.\n最高等級時\n你只會收到10%時間的影響.\n需要 精神抖擻 IV 才能生效."
   applies-to: 'Boots'
   type: 'DEFENSE'
   group: 'HEROIC'
@@ -5849,8 +5849,8 @@ polymorphicmetaphysical:
       effects:
         - 'CURE:SLOW %victim%'
 soulbound:
-  display: '%group-color%Soulbound'
-  description: "A chance to keep item on death."
+  display: '%group-color%靈魂綁定(Soulbound)'
+  description: "當你死亡，道具有機會保留在身上."
   applies-to: 'Weapons + Tools + Bows'
   type: 'DEATH;PASSIVE_DEATH'
   group: 'HEROIC'
@@ -5878,8 +5878,8 @@ soulbound:
       effects:
         - 'KEEP_ON_DEATH'
 reinforcedtank:
-  display: '%group-color%Reinforced Tank'
-  description: "Decreases damage from enemy\naxes by 6% + 2% per level.\nRequires Tank IV to apply."
+  display: '%group-color%強化坦克忍耐'
+  description: "降低敵人使用斧頭造成的傷害\n 6% + 2% .\n需要 坦克忍耐 IV 才能生效."
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'HEROIC'
@@ -5921,8 +5921,8 @@ reinforcedtank:
       effects:
         - 'REMOVE_DAMAGE:14 %victim%'
 epidemiccarrier:
-  display: '%group-color%Epidemic Carrier'
-  description: "When near death, chance to summons creepers\nand debuffs to avenge you. Requires Plague Carrier VIII to apply."
+  display: '%group-color%上級死靈法師'
+  description: "即將死亡的時候會召喚苦力怕\n以及負面效果為你復仇. 需要 死靈法師 VIII 才能生效."
   applies-to: 'Leggings'
   type: 'DEFENSE'
   group: 'HEROIC'
@@ -6017,8 +6017,8 @@ epidemiccarrier:
         - 'GUARD:CREEPER:%victim%'
         - 'POTION:BLINDNESS:2:100 %attacker%'
 godlyoverload:
-  display: '%group-color%Godly Overload'
-  description: "Heroic Enchantment. A very large\npermanent increase in hearts. Requires\nOverload III enchant on item to apply."
+  display: '%group-color%超級生命超載'
+  description: "英雄附魔.\n強力地永久增加血量. \n需要  生命超載 III 才能生效."
   applies-to: 'Armor'
   type: 'EFFECT_STATIC'
   group: 'HEROIC'
@@ -6041,8 +6041,8 @@ godlyoverload:
       effects:
         - 'POTION:HEALTH_BOOST:4'
 reflectiveblock:
-  display: '%group-color%Reflective Block'
-  description: "Heroic Enchantment.\nA chance to greatly or completely negate\nincoming damage while blocking, and\nto reflect an incoming attack back\non the attacker whether you are blocking\nor not. Requires Block III to apply."
+  display: '%group-color%反射格擋(Reflective Block)'
+  description: "超級影響附魔.\n有機率格擋部分傷害甚至全部格擋\n並且將傷害反射攻擊者\n 需要 格擋 III 才能生效."
   applies-to: 'Swords'
   type: 'DEFENSE'
   group: 'HEROIC'
@@ -6074,8 +6074,8 @@ reflectiveblock:
         - 'STOP_ATTACK'
         - 'ADD_HARM:%damage% %attacker%'
 masterinquisitive:
-  display: '%group-color%Master Inquisitive'
-  description: "Heroic Enchantment. Chance to massively\nincreases EXP drops from mobs.\nRequires Inquisitive IV enchant\non item to apply."
+  display: '%group-color%劍道大師(Master Inquisitive)'
+  description: "英雄附魔. 大幅提升擊殺怪物掉落經驗\n需要 劍道錘煉 IV 才能."
   applies-to: 'Swords'
   type: 'KILL_MOB'
   group: 'HEROIC'
@@ -6109,8 +6109,8 @@ masterinquisitive:
       effects:
         - 'EXP:<math>(%exp% * (1.0 + 0.25 * %level%))*2.0</math> %victim%'
 planetarydeathbringer:
-  display: '%group-color%Planetary Deathbringer'
-  description: "Heroic Enchantment. An increased\nchance to deal 1.5x damage. Requires\nDeathbringer III enchant on item to apply."
+  display: '%group-color%死亡法師(Planetary Deathbringer)'
+  description: "英雄附魔.\n增加機率造成 1.5x 傷害. 死亡使者 III enchant on item to apply."
   applies-to: 'Armor'
   type: 'ATTACK'
   group: 'HEROIC'
