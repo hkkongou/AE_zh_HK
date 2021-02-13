@@ -726,13 +726,18 @@ messages:
     reapplied: '&aYour armor has been re-applied.'
 
 settings:
+  # Should enchantments on items be organized automatically in lore based on rarity?
+  organizeEnchantsOnItems: true
+
   # Non-legacy potions system stacks potions nd removes portions of potion from player,
   # so removing one piece will not remove the whole streak. Suggested value: true
   use-legacy-potions-system: true
+
   steal-money:
     message-enabled: false
     # replace with 'you' instead of player name for directed player
     message: '&6%attacker% &7stole &6%amount% &7from &6%victim%'
+
   # After how many sequential hits combo should reset?
   combo-limit: 5
   # Should trenched drops be automatically added to inventory? (prevents lag)
@@ -792,7 +797,7 @@ settings:
     # Setting this to FALSE will only make the plugin work with WorldGuard
     # Setting this to TRUE will let plugin choose between WG-only or Universal method, may cause performance loss
     automaticallyDetect: true
-  # Should souls be collected from mobs? By default souls are collected from Mobs only
+  # Should souls be collected from mobs? By default souls are collected from Players only
   collect-souls-from-mobs: false
   # Trench Whitelist
   # If list is not empty, will not allow to break any other blocks than listed here
