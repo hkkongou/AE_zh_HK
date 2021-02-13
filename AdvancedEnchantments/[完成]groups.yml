@@ -97,7 +97,7 @@ groups:
       chance: 22
   SOUL:
     global-color: '&c'
-    group-name: "Soul"
+    group-name: "靈魂"
     right-click-book-material: FIREWORK_CHARGE
     # Use this to set firework charge's color only! Uses RGB
     # Find colors here: https://htmlcolorcodes.com/color-picker/
@@ -113,7 +113,7 @@ groups:
       chance: 22
   HEROIC:
     global-color: '&d'
-    group-name: "Heroic"
+    group-name: "英雄"
     right-click-book-material: FIREWORK_CHARGE
     # Use this to set firework charge's color only! Uses RGB
     # Find colors here: https://htmlcolorcodes.com/color-picker/
@@ -129,7 +129,7 @@ groups:
       chance: 22
   MASTERY:
     global-color: '&4'
-    group-name: "Mastery"
+    group-name: "精通"
     right-click-book-material: FIREWORK_CHARGE
     # Use this to set firework charge's color only! Uses RGB
     # Find colors here: https://htmlcolorcodes.com/color-picker/
