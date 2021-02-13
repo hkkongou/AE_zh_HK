@@ -12,7 +12,7 @@ enchantment-info:
   # Set to [] to disable
   # Use %list-of-items% for applyable materials in lore and %list-of-items-msg% for message.
   message:
-  - "&7Information about &e%enchant% &7enchantment."
+  - "&7關於 &e%enchant% &7附魔的資料."
   inventory:
     # If not enabled, only message will be shown.
     # You can use all variables that are used for items in the message,
@@ -25,7 +25,7 @@ enchantment-info:
     # Does not work with HOPPER inventory
     size: 45
     # Inventory name
-    name: "&e%enchant%&7 information"
+    name: "&e%enchant%&7 資訊"
     items:
       # Slots start from 0
       # This number defines the inventory slot.
@@ -39,12 +39,12 @@ enchantment-info:
         type: ENCHANTED_BOOK
         id: 0
         force-glow: false
-        name: "&7Information about &e%enchant% &7enchantment"
+        name: "&7關於 &e%enchant% &7附魔的資料"
         lore:
-        - "&eEnchantment &7» &r%ench-colors%"
-        - "&eApplies to &7» &r%applies-to%"
-        - "&eMax Level &7» &r%max-lvl%"
-        - "&eDescription &7» &r%desc%"
+        - "&e附魔 &7» &r%ench-colors%"
+        - "&e適用於 &7» &r%applies-to%"
+        - "&e最高等級 &7» &r%max-lvl%"
+        - "&e描述 &7» &r%desc%"
         # you can as well use %group-color% to get enchantment color
       2:
         type: STAINED_GLASS_PANE
@@ -56,7 +56,7 @@ enchantment-info:
         type: CHEST
         id: 0
         force-glow: false
-        name: "&eApplies to &7»"
+        name: "&e適用於 &7»"
         lore:
         - '&7%applies-to%'
       4:
@@ -77,7 +77,7 @@ enchantments:
   # Message when opening menu
   # Set to [] to disable
   message:
-  - "&7Showing list of all enchantments..."
+  - "&7顯示所有附魔的清單..."
   mode:
     # Modes: GROUPS, ALL
     # If set to GROUPS, first group selection inventory will show up
@@ -91,7 +91,7 @@ enchantments:
     # Display page number with next/previous page item amounts?
     display-page-number: true
     # Inventory name
-    name: "&7Server Enchantments"
+    name: "&7自定義附魔"
     items:
       # Slots start from 0
       # This number defines the inventory slot.
@@ -101,55 +101,55 @@ enchantments:
         force-glow: false
         # What enchantment group list should it open?
         group: 'SIMPLE'
-        name: "&7All &f&lSimple Enchantments"
+        name: "&7所有 &f&l普通等級的附魔 &7(點擊打開)"
         lore:
-        - ' &7Click here to &fopen a preview&7 of all'
-        - ' &7available &fSimple &7group enchantments!'
+        - ' &7點擊這裡 &f開啟預覽&7 所有'
+        - ' &7可用的 &f普通 &7等級附魔!'
       12:
         type: STAINED_GLASS_PANE
         id: 5
         force-glow: false
         group: 'UNIQUE'
-        name: "&7All &a&lUnique Enchantments"
+        name: "&7所有 &a&l獨特等級的附魔 &7(點擊打開)"
         lore:
-        - ' &7Click here to &fopen a preview&7 of all'
-        - ' &7available &aUnique &7group enchantments!'
+        - ' &7點擊這裡 &f開啟預覽&7 所有'
+        - ' &7可用的 &a獨特 &7等級附魔!'
       13:
         type: STAINED_GLASS_PANE
         id: 3
         force-glow: false
         group: 'ELITE'
-        name: "&7All &b&lElite Enchantments &7(Click to open)"
+        name: "&7所有 &b&l精英等級的附魔 &7(點擊打開)"
         lore:
-        - ' &7Click here to &fopen a preview&7 of all'
-        - ' &7available &bElite &7group enchantments!'
+        - ' &7點擊這裡 &f開啟預覽&7 所有'
+        - ' &7可用的 &b精英 &7等級附魔!'
       14:
         type: STAINED_GLASS_PANE
         id: 4
         force-glow: false
         group: 'ULTIMATE'
-        name: "&7All &e&lUltimate Enchantments &7(Click to open)"
+        name: "&7所有 &e&l超級等級的附魔 &7(點擊打開)"
         lore:
-        - ' &7Click here to &fopen a preview&7 of all'
-        - ' &7available &eUltimate &7group enchantments!'
+        - ' &7點擊這裡 &f開啟預覽&7 所有'
+        - ' &7可用的 &e超級 &7等級附魔!'
       15:
         type: STAINED_GLASS_PANE
         id: 1
         force-glow: false
         group: 'LEGENDARY'
-        name: "&7All &6&lLegendary Enchantments &7(Click to open)"
+        name: "&7所有 &6&l獨特等級的附魔 &7(點擊打開)"
         lore:
-        - ' &7Click here to &fopen a preview&7 of all'
-        - ' &7available &6Legendary &7group enchantments!'
+        - ' &7點擊這裡 &f開啟預覽&7 所有'
+        - ' &7可用的 &6獨特 &7等級附魔!'
       22:
         type: STAINED_GLASS_PANE
         id: 14
         force-glow: false
         group: 'HEROIC'
-        name: "&7All &4&lHeroic Enchantments &7(Click to open)"
+        name: "&7所有 &4&l獨特等級的附魔 &7(點擊打開)"
         lore:
-        - ' &7Click here to &fopen a preview&7 of all'
-        - ' &7available &4Heroic &7group enchantments!'
+        - ' &7點擊這裡 &f開啟預覽&7 所有'
+        - ' &7可用的 &4傳奇 &7等級附魔!'
       fill:
         type: STAINED_GLASS_PANE
         id: 15
@@ -157,7 +157,7 @@ enchantments:
         name: " "
         lore: []
   group-enchantment-inventory:
-    name: "%color%%group%&7 Enchantments"
+    name: "%color%%group%&7 附魔"
     # Fills empty slots with this item
     fill-item:
       material: STAINED_GLASS_PANE
@@ -167,13 +167,13 @@ enchantments:
     previous-page:
       material: STAINED_GLASS_PANE
       id: 14
-      name: "&cPrevious Page."
+      name: "&c上一頁."
       lore: []
       slot: '%invSize% - 3'
     next-page:
       material: STAINED_GLASS_PANE
       id: 5
-      name: "&aNext Page."
+      name: "&a下一頁."
       lore: []
       slot: '%invSize% - 2'
     item:
@@ -185,7 +185,7 @@ enchantments:
       command: '/enchant %enchantment%'
       name: "&e%enchant% &7enchantment"
       lore:
-      - " &f* &eEnchantment &7» &r%ench-colors%"
-      - " &f* &eApplies to &7» &r%applies-to%"
-      - " &f* &eMax Level &7» &r%max-lvl-roman%"
-      - " &f* &eDescription &7» &r%desc%"
+      - " &f* &e附魔 &7» &r%ench-colors%"
+      - " &f* &e適用於 &7» &r%applies-to%"
+      - " &f* &e最高等級 &7» &r%max-lvl-roman%"
+      - " &f* &e描述 &7» &r%desc%"
