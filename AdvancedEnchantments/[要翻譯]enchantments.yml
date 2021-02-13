@@ -5153,8 +5153,8 @@ blacksmith:
         - 'HALF_DAMAGE'
         - 'MESSAGE:&6&l** BLACKSMITH ** %attacker%'
 abiding:
-  display: '%group-color%Abiding'
-  description: "Tools with this enchant become unbreakable"
+  display: '%group-color%永恆不變(Abiding)'
+  description: "擁有此附魔的道具會變成無法破壞耐久度"
   applies-to: 'Tools'
   type: 'MINING;ATTACK;ATTACK_MOB'
   group: 'LEGENDARY'
@@ -5167,8 +5167,8 @@ abiding:
       effects:
         - 'REPAIR'
 devour:
-  display: '%group-color%Devour'
-  description: "Chance to multiplies damage dealt to\nplayers with active bleed stacks."
+  display: '%group-color%吞噬者(Devour)'
+  description: "有機會對敵方玩家造成倍數傷害\n如果有堆疊流血效果."
   applies-to: 'Axe'
   type: 'ATTACK'
   group: 'LEGENDARY'
@@ -5204,8 +5204,8 @@ devour:
       effects:
         - 'EXTRA_DAMAGE:<random number>1-4</random number>'
 diminish:
-  display: '%group-color%Diminish'
-  description: "When this effect procs, the next attack\ndealt to you cannot deal more than\nthe (total amount of damage / 2)\nyou took from the previous attack."
+  display: '%group-color%制裁(Diminish)'
+  description: "當這個效果正在生效, 下一次對你\n造成的攻擊傷害不會多過\n 你上一次承受傷害的 1/2."
   applies-to: 'Chestplate'
   type: 'DEFENSE'
   group: 'LEGENDARY'
@@ -5243,8 +5243,8 @@ diminish:
       effects:
         - 'HALF_DAMAGE'
 disarmor:
-  display: '%group-color%Disarmor'
-  description: "A slight chance of removing one\npiece of armor from your enemy\nwhen they are at low health."
+  display: '%group-color%解除裝甲(Disarmor)'
+  description: "有少量機率令你的敵人身上一件裝甲脫下\nwhen they are at low health."
   applies-to: 'Sword'
   type: 'ATTACK'
   group: 'LEGENDARY'
@@ -5300,8 +5300,8 @@ disarmor:
         - 'REMOVE_RANDOM_ARMOR %victim%'
         - 'MESSAGE:&6&l** YOU HAVE BEEN DISARMORED ** %victim%'
 deathgod:
-  display: '%group-color%Death God'
-  description: "Attacks that bring your HP to\n(level+4) hearts or lower have a chance\nto heal you for (level+5) hearts instead."
+  display: '%group-color%垂死掙扎(Death God)'
+  description: "當你遭受傷害導致你的總血量低過(現有等級+4) \n將會回復您的生命值按照(現有等級+5)."
   applies-to: 'Helmet'
   type: 'DEFENSE'
   group: 'LEGENDARY'
@@ -5333,8 +5333,8 @@ deathgod:
         - 'ADD_HEALTH:13 %victim%'
         - 'MESSAGE:&6&l* DEATH GOD * %victim%'
 insanity:
-  display: '%group-color%Insanity'
-  description: "You swing your axe like a maniac.\n Chance to multiplies damage against players\nwho are wielding a SWORD at\nthe time they are hit."
+  display: '%group-color%精神錯亂(Insanity)'
+  description: "轉動你的斧頭如同瘋子.\n 有機會增加你對玩家造成的傷害\n當他們手持一把劍\n時受到傷害."
   applies-to: 'Axe'
   type: 'ATTACK'
   group: 'LEGENDARY'
@@ -5398,8 +5398,8 @@ insanity:
       effects:
         - 'DOUBLE_DAMAGE'
 sniper:
-  display: '%group-color%Sniper'
-  description: "Headshots with projectile\ndeal up to 3.5x damage."
+  display: '%group-color%狙擊手(Sniper)'
+  description: "投擲物擊中頭部的話\n造成 3.5倍傷害."
   applies-to: 'Bow'
   type: 'BOW'
   group: 'LEGENDARY'
@@ -5448,8 +5448,8 @@ sniper:
         - 'INCREASE_DAMAGE:<random number>100-350</random number> %attacker%'
         - 'MESSAGE:&6&l** HEADSHOT ** %victim%'
 destruction:
-  display: '%group-color%Destruction'
-  description: "Chance to damages and debuffs\nall nearby enemies when attacked."
+  display: '%group-color%毀壞(Destruction)'
+  description: "攻擊時有機會造成傷害並且給予負面效果給周遭的敵人."
   applies-to: 'Helmet'
   type: 'DEFENSE'
   group: 'LEGENDARY'
@@ -5512,8 +5512,8 @@ destruction:
         - 'CURE:HASTE <aoe> radius=5 target=damageable </aoe>'
         - 'MESSAGE:&e&l*** &eDesctruction &e&l*** &7(%victim name%) <aoe> radius=5 target=damageable </aoe>'
 extremeinsanity:
-  display: '%group-color%Insanity'
-  description: "You swing your sword like an extreme maniac.\nChance to multiplies damage against players\nwho are wielding a SWORD at\nthe time they are hit.\nRequires Instanity VIII to apply."
+  display: '%group-color%極度錯亂extremeinsanity'
+  description: 轉動你的斧頭如同瘋子.\n 有機會增加你對玩家造成的傷害\n當他們手持一把劍\n時受到傷害.\n需要精神錯亂 VIII 才能生效."
   applies-to: 'Axes'
   type: 'ATTACK'
   settings:
@@ -5583,8 +5583,8 @@ extremeinsanity:
       effects:
         - 'DOUBLE_DAMAGE'
 megaheavy:
-  display: '%group-color%Mega Heavy'
-  description: "Chance to decreases Damage from enemy bows\nby 10% plus an additional 2%\nper level. Requires Heavy V to apply."
+  display: '%group-color%超級重力(Mega Heavy)'
+  description: "降低敵人造成的弓箭傷害\n每 10% 以及每等級額外 2%\需要重力 V 才能使用."
   applies-to: 'Armor'
   type: 'DEFENSE_BOW'
   settings:
@@ -5633,8 +5633,8 @@ megaheavy:
       effects:
         - 'REMOVE_DAMAGE:20'
 bewitchedhex:
-  display: '%group-color%Bewitched Hex'
-  description: "Once a target is affected with Bewitched Hex,\na portion of all their outgoing damage is\nreduced. When attacked, they receives extra damage.\nRequires Hex IV to apply."
+  display: '%group-color%擴展迷惑(BewitchedHex)'
+  description: "當一個目標被擴展迷惑所影響,\n一部分他們所造成的傷害會被降低\n當被攻擊，他們會承受更多傷害.\n需要 迷惑 IV 才能生效."
   applies-to: 'Axes'
   type: 'ATTACK'
   settings:
@@ -5672,8 +5672,8 @@ bewitchedhex:
         - 'DECREASE_DAMAGE:<random number>20-75</random number> %victim%'
         - 'ADD_HARM:<random number>5-10</random number> %victim%'
 mightycleave:
-  display: '%group-color%Mighty Cleave'
-  description: "Chance to deals up to 8 damage in up to a 4 block radius.\nRequires Cleave VII to apply."
+  display: '%group-color%強烈巨斧斬擊(MightyCleave)'
+  description: "有機率對4格範圍以內造成最高8點傷害.\n需要 巨斧斬擊 VII to apply."
   applies-to: 'Axes'
   type: 'ATTACK'
   group: 'HEROIC'
