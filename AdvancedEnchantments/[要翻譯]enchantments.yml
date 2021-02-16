@@ -6139,8 +6139,8 @@ planetarydeathbringer:
       effects:
         - 'INCREASE_DAMAGE:50 %attacker%'
 divineenlighted:
-  display: '%group-color%Divine Enlighted'
-  description: "Heroic Enchantment. High chance of\nhealing lots of HP while taking damage. Requires\nEnlighted III enchant on item to apply."
+  display: '%group-color%神聖傷害轉化(Divine Enlighted)'
+  description: "英雄附魔. \n高機率受傷害的時候可以回血.\n需要 傷害轉化III 才能生效."
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'HEROIC'
@@ -6169,8 +6169,8 @@ divineenlighted:
       effects:
         - 'ADD_HEALTH:<random number>1-4</random number> %victim%'
 lethalsniper:
-  display: '%group-color%Lethal Sniper'
-  description: "Heroic Enchantment. Increased\nheadshot chance and multiplied damage\nup to 4.5x. Requires Sniper V\nenchant on item to apply."
+  display: '%group-color%致命狙擊(Lethal Sniper)'
+  description: "英雄附魔.\n增加爆頭機率以及加成傷害\n投擲物擊中頭部的話造成 4.5倍傷害\n 狙擊手."
   applies-to: 'Bow'
   type: 'BOW'
   group: 'HEROIC'
@@ -6225,8 +6225,8 @@ lethalsniper:
         - 'INCREASE_DAMAGE:<random number>100-450</random number> %attacker%'
         - 'MESSAGE:&d&l** LETHAL HEADSHOT ** %victim%'
 atomicdetonate:
-  display: '%group-color%Atomic Detonate'
-  description: "Heroic Enchantment. Summons up to a\n7x7 explosion around any blocks you\nbreak. Requires Detonate IX enchant\non item to apply."
+  display: '%group-color%原子起爆(Atomic Detonate)'
+  description: "英雄附魔. 爆破附近最大7x7空間\n 需要 起爆 IX enchant\non item to apply."
   applies-to: 'Tools'
   type: 'MINING'
   group: 'HEROIC'
@@ -6277,8 +6277,8 @@ atomicdetonate:
       effects:
         - 'TRENCH:7'
 titantrap:
-  display: '%group-color%Titan Trap'
-  description: "Heroic Enchantment. A chance to\ngive a longer lasting buffed\nslowness effect. Requires Trap III to apply."
+  display: '%group-color%泰坦圈套(Titan Trap)'
+  description: "英雄附魔\n有機會給予長久的減速效果給敵人\n需要圈套 III 才能生效."
   applies-to: 'Swords'
   type: 'ATTACK'
   group: 'HEROIC'
@@ -6310,8 +6310,8 @@ titantrap:
         - 'POTION:SLOW:40:120 %victim%'
         - 'MESSAGE:&c&l** TITAN TRAP [&76s&c&l**'
 bidirectionalteleportation:
-  display: '%group-color%Bidirectional Teleportation'
-  description: "Heroic Enchantment. Chance to grapple an enemy towards you."
+  display: '%group-color%雙向傳送(Bidirectional Teleportation)'
+  description: "影響附魔. 有機會抓鉤你的敵人向你的方向."
   applies-to: 'Bows'
   type: 'BOW'
   group: 'HEROIC'
@@ -6340,8 +6340,8 @@ bidirectionalteleportation:
       effects:
         - 'PULL_CLOSER:3.0 %victim%'
 masterblacksmith:
-  display: '%group-color%Master Blacksmith'
-  description: "Chance to heal your most damaged\npiece of armor by 2-3 durability whenever\nyou hit a player, but when it procs your\nattack will deal between 75%-100% damage.\nRequires Blacksmith V enchantment on item to apply."
+  display: '%group-color%大師工匠(Master Blacksmith)'
+  description: "有機率修復你耐久度最低的裝甲2-3耐久度\n攻擊敵方玩家時觸發\n但是續發時會令你做成只有 75%-100% 傷害.\n需要 鐵匠 V enchantment on item to apply."
   applies-to: 'Axe'
   type: 'ATTACK'
   group: 'HEROIC'
@@ -6390,8 +6390,8 @@ masterblacksmith:
         - 'DECREASE_DAMAGE:<random number>1-25</random number>'
         - 'MESSAGE:&d&l** MASTER BLACKSMITH ** %attacker%'
 vengefuldiminish:
-  display: '%group-color%Vengeful Diminish'
-  description: "Ensures that the next strike against you\nonly deals 50% of the damage inflicted and\nany extra above that will be returned\nto the attacker. Requires Diminish VI\nenchant on item to apply."
+  display: '%group-color%復仇制裁(Vengeful Diminish)'
+  description: "確保下次對你的攻擊\n只會造成 50% 傷害\n任何過多的傷害將會反彈回攻擊者\n需要 制裁 VI ."
   applies-to: 'Chestplate'
   type: 'DEFENSE'
   group: 'HEROIC'
@@ -6441,8 +6441,8 @@ vengefuldiminish:
         - 'HALF_DAMAGE'
         - 'ADD_HARM:%damage% %attacker%'
 alienimplants:
-  display: '%group-color%Alien Implants'
-  description: "Heal 2x the HP of\nnormal Implants, and\nat max level all hunger loss is\ndisabled. Requires Implants III."
+  display: '%group-color%光合轉化(Alien Implants)'
+  description: "光合作用的2x效果\n最高等級將保持飽食度滿\n 需要光合作用 III."
   applies-to: 'Helmets'
   type: 'REPEATING'
   time: 5
@@ -6475,8 +6475,8 @@ alienimplants:
         - 'ADD_HEALTH:2'
         - 'ADD_FOOD:10'
 etherealdodge:
-  display: '%group-color%Ethereal Dodge'
-  description: "Increased proc rate over normal Dodge,\nwith a small chance to gain Speed V\nfor a few seconds on successful\ndodge. Requires Dodge V."
+  display: '%group-color%通靈閃避(Ethereal Dodge)'
+  description: "增加閃避機率,\n觸發時小機率提供短暫 速度V 效果\n需要 閃避V 才能生效."
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'HEROIC'
@@ -6499,8 +6499,8 @@ etherealdodge:
         - 'MESSAGE:&d&l** ETHEREAL DODGE* * %victim%'
         - 'POTION:SPEED:4:80 %victim%'
 paladinarmored:
-  display: '%group-color%Paladin Armored'
-  description: "Negates 10 + 5 per level of enemy sword damage. A chance\nto be Blessed every time you\nare struck by an enemy sword.\nRequires Armored IV."
+  display: '%group-color%聖鬥士抵抗(Paladin Armored)'
+  description: "抵擋 10 + 每等級5 敵人造成的劍傷害. \n每次受傷的時候都會有機會觸發\n需要 傷害抵抗 IV."
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'HEROIC'
@@ -6542,8 +6542,8 @@ paladinarmored:
       effects:
         - 'NEGATE_DAMAGE:30 %attacker%'
 demoniclifesteal:
-  display: '%group-color%Demonic Lifesteal'
-  description: "Heals much more HP at a greatly\nincreased rate compared to normal\nLifesteal. Requires Lifesteal V."
+  display: '%group-color%惡魔吸血(Demonic Lifesteal)'
+  description: "相比正常時候回復更多的血量\n需要 吸血 V."
   applies-to: 'Swords'
   type: 'ATTACK'
   group: 'HEROIC'
@@ -6587,8 +6587,8 @@ demoniclifesteal:
         - 'ADD_HEALTH:<random number>5-6</random number> %attacker%'
         - 'MESSAGE:&d&l** DEMONIC LIFESTEAL ** &7(&c- %random%HP&7) %attacker%'
 deepbleed:
-  display: '%group-color%Deep Bleed'
-  description: "Heroic Enchantment. A chance\nto affect foes with increased\nslowness and inflict more damage.\nRequires Bleed VI."
+  display: '%group-color%深度流血(Deep Bleed)'
+  description: "英雄附魔\n有機率影響敵人，提供緩速以及造成更多傷害\n需要  VI."
   applies-to: 'Axe'
   type: 'ATTACK'
   group: 'HEROIC'
@@ -6658,8 +6658,8 @@ deepbleed:
         - 'WAIT:20'
         - 'ADD_HARM:<random number>1-4</random number> %victim%'
 shadowassassin:
-  display: '%group-color%Shadow Assassin'
-  description: "Heroic Enchantment. The\ncloser you are to your enemy,\nthe more damage you deal\n(up to 1.875x). However, if you\nare more than 2 blocks away, you\nwill deal LESS damage than normal.\nRequires Assassin V."
+  display: '%group-color%幻影刺客(Shadow Assassin)'
+  description: "英雄附魔. \n如果你愈接近你的敵人\n你會造成更多傷害(最高 1.875x) \n但如果你距離敵人2 格外\n你會造成比正常少啲傷害.\nRequires Assassin V."
   applies-to: 'Swords'
   type: 'ATTACK'
   group: 'HEROIC'
@@ -6698,8 +6698,8 @@ shadowassassin:
       effects:
         - 'DISTANCE_DAMAGE:5:1 %attacker%'
 rogue:
-  display: '%group-color%Rogue'
-  description: "Active soul enchant. Chance to deal up to 2.0x damage."
+  display: '%group-color%惡棍(Rogue)'
+  description: "靈魂附魔. 造成最高 2.0x damage."
   applies-to: 'Axes'
   type: 'ATTACK'
   group: 'SOUL'
@@ -6725,8 +6725,8 @@ rogue:
       effects:
         - 'INCREASE_DAMAGE:<random number>25-100</random number> %attacker%'
 sabotage:
-  display: '%group-color%Sabotage'
-  description: "An active soul enchantment that gives a chance to block\nan enemy players Rocket Escape and Guided Rocket Escape from activating."
+  display: '%group-color%破壞(Sabotage)'
+  description: "靈魂附魔\n有機會格擋火箭逃離以及引導火箭逃離生效."
   applies-to: 'Swords'
   type: 'ATTACK'
   group: 'SOUL'
@@ -6764,8 +6764,8 @@ sabotage:
         - 'DISABLE_ACTIVATION:rocketescape:3 %victim%'
         - 'DISABLE_ACTIVATION:guidedrocketescape:3 %victim%'
 natureswrath:
-  display: '%group-color%Natures Wrath'
-  description: "Temporarily freeze all enemies in\na massive area around you, pushing\nthem back and dealing massive nature\ndamage. 75 souls per use."
+  display: '%group-color%自然之怒(Natures Wrath)'
+  description: "短暫凍結所有附近的玩家\n把他們推後並且造成大量傷害\n每次使用消耗75."
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'SOUL'
@@ -6817,8 +6817,8 @@ natureswrath:
         - 'LIGHTNING %attacker%'
         - 'MESSAGE:&2&l** NATURES WRATH ** %attacker%'
 phoenix:
-  display: '%group-color%Phoenix'
-  description: "An attack that would normally\nkill you will instead heal you to\nfull HP. Can only be activated once every\ncouple minutes. 500 souls per use."
+  display: '%group-color%鳳凰重生(Phoenix)'
+  description: "當你遇到會擊殺你的傷害時\n會轉化傷害並把你會滿血\n 幾分鐘只可使用一次. 消耗500 靈魂."
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'SOUL'
@@ -6856,8 +6856,8 @@ phoenix:
         - 'MESSAGE:&c&l** PHOENIX ** %victim%'
         - 'PLAY_SOUND:ITEM_BREAK:4 %victim%'
 teleblock:
-  display: '%group-color%Teleblock'
-  description: "Active soul enchant. Your bow is enchanted with enderpearl blocking magic.\nA chance that damaged players will be unable to use enderpearls for up to 20 seconds\nand will lose up to 15 enderpearls from their inventory."
+  display: '%group-color%傳送障礙(Teleblock)'
+  description: "靈魂附魔. 有機會令受傷玩家無法在20秒內使用終界珍珠\n並會損失15個."
   applies-to: 'Bows'
   type: 'BOW'
   group: 'SOUL'
@@ -6906,8 +6906,8 @@ teleblock:
         - 'TAKE_AWAY:ENDERPEARL:3 %victim%'
         - 'MESSAGE:&c&l** TELEBLOCK ** %victim%'
 soultrap:
-  display: '%group-color%Soul Trap'
-  description: "Active soul enchant. Your weapon\nis imbued with sealing magic, and\nhas a chance to disable/negate all\nsoul enchantments of your enemies\non hit for (level x 4) seconds.\n2 souls per second."
+  display: '%group-color%靈魂陷阱(Soul Trap)'
+  description: "靈魂附魔. \n有機率無視所有敵人的靈魂附魔\n長達 (等級 x 4) 秒.\n每秒消耗 2 靈魂."
   applies-to: 'Weapons'
   type: 'ATTACK'
   group: 'SOUL'
@@ -6943,8 +6943,8 @@ soultrap:
         - 'DISABLE_ACTIVATION:immortal:12'
         - 'MESSAGE:&c&l** SOUL TRAP ** %victim%'
 immortal:
-  display: '%group-color%Immortal'
-  description: "Passive soul enchant.\nChance to prevents your armor from taking\ndurability damage, in exchange for souls.\n5 souls per use."
+  display: '%group-color%不朽(Immortal)'
+  description: "被動靈魂附魔\n有機率防止您的裝甲承受耐久度傷害\n用靈魂兌換.\n每次使用消耗 5 靈魂."
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'SOUL'
@@ -6976,8 +6976,8 @@ immortal:
       effects:
         - 'ADD_DURABILITY:-10 %victim%'
 divineimmolation:
-  display: '%group-color%Divine Immolation'
-  description: "Active soul enchant. Chance for your sword\nto be imbued with divine fire, turning\nall your physical attacks into Area of\nEffect spells and igniting divine fire\nupon all nearby enemies.\n75 souls per use."
+  display: '%group-color%神聖獻祭(Divine Immolation)'
+  description: "主動靈魂附魔. 你的劍將會有神聖火焰包圍\n所有你的物理攻擊轉變成範圍攻擊的咒語並且點燃神聖火焰\n攻擊附近敵人\n每次消耗 75 souls per use."
   applies-to: 'Sword'
   type: 'ATTACK'
   group: 'SOUL'
