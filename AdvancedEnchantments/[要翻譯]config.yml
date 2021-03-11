@@ -6,22 +6,22 @@
 # ** 指令
 # /enchanter - 開啟AE選單
 # /tinkerer - 打開銷毀介面 (註:把物品變成一定的經驗值)
-# /gkits - 打開物品包
-# /ae - AE指令簡介
+# /gkits - 打開工具包
+# /ae - AE指令簡介; ae.help
 # /ae about - 關於現AE版本的訊息
-# /ae list - 列出所有AE附魔
+# /ae list - 列出所有AE附魔; ae.list
 # /ae admin - Open a menu with all possible enchantments (100% success rate); ae.admin
-# /ae giveitem <player> <item> - Give various plugin items; ae.giveitem
-# /ae give <player> <enchantment> <level> - Give custom enchanted book; ae.give
-# /ae info <enchantment> - Information about custom enchantment; ae.info
-# /ae reload - Reload all configurations; ae.reload
-# /ae enchant <enchantment> <level> - Enchant item; ae.enchant
-# /ae givebook <player> <enchantment> <level> <count> <success> <destroy> - Give book with specific rates; ae.givebook
+# /ae giveitem <玩家> <物品> - 給予指定玩家一個AE特殊物品; ae.giveitem
+# /ae give <玩家> <附魔名稱> <等級> - 給予指定玩家一本指定AE附魔書還有附魔等級; ae.give
+# /ae info <附魔名稱> - 關於AE附魔書的介紹; ae.info
+# /ae reload - 重新啟動插件; ae.reload
+# /ae enchant <附魔名稱> <等級> - 附魔慣用手上的物品; ae.enchant
+# /ae givebook <玩家> <附魔名稱> <等級> <數量> <成功機率> <失敗機率> - 給予指定玩家一本AE附魔書; ae.givebook
 # /ae givercbook <type> <player> <amount> - Give right-clickable book; ae.givercbook
 # /ae giverandombook <player> <group> - Gives random book from group; ae.giverandombook
 # /ae pasteenchants - Pastes formatted enchantments list; ae.admin
 # /alchemist - Open alchemist; no permission
-# /ae givegkit <player> <gkit> - Give player gkit items; ae.givegkit
+# /ae givegkit <player> <gkit> - 給予玩家AE工具包的特定物品; ae.givegkit
 
 # /aegive - Give player gkit items; ae.give
 # Example: /aegive GC diamond_helmet 1 name:&&7cItem_name protection:5 glowing:1 lore:&&7cLore_line_#1|&&7cSecond_Line
@@ -34,11 +34,11 @@
 # Manage plugin commands
 commands:
   advancedenchantments:
-    # Should 'no permission' message be shown when
-    # user does not have 'ae.help' permission
+    # 若沒有權限應會出現"沒有權限"等訊息
+    # 使用者沒有 'ae.help'權限
     permissionMessageEnabled: true
     permissionMessage:
-      - '&6&lAdvancedEnchantments &cYou do not have permission to use this command.'
+      - '&6&lAdvancedEnchantments &c您沒有此權限可以使用此操作.'
   enchanter:
     # Is command enabled?
     enabled: true
@@ -67,7 +67,7 @@ commands:
     enabled: true
     command: /apply
     aliases:
-      - 'reapply'
+      - '重新修復'
 
 permissions:
   enchanter:
@@ -109,9 +109,9 @@ alchemist:
     pre-set-pricing:
       price: 250
   messages:
-    inv-name: "Alchemist"
+    inv-name: "特殊合成"
     item-preview:
-      name: "&e&lItem Preview"
+      name: "&e&l物品預覽"
       lore:
         - '&7A preview of item you will'
         - '&7receive from the Alchemist'
@@ -120,19 +120,19 @@ alchemist:
         type: STAINED_GLASS_PANE
         damage: 0
     item-explanation:
-      name: "&e&lAlchemist"
+      name: "&e&l特殊合成"
       lore:
-        - '&7The Alchemist will Exchange...'
+        - '&7正在融合中...'
         - ''
-        - '&b&l* &f2X Enchantment Books'
-        - '&7(of the same type and level)'
-        - '&d= &f1X Enchantment Book'
-        - '&7(of higher level)'
+        - '&b&l* &f２ｘ附魔書'
+        - '&7(相同類型和等級才可升級)'
+        - '&d= &f１ｘ附魔書'
+        - '&7(合成出的更高等級)'
         - ''
-        - '&b&l* &f2X Magic Dust'
-        - '&7(of the same rarity)'
-        - '&d= &f1X Magic Dust'
-        - '&7(of higher chances)'
+        - '&b&l* &f2２ｘ魔法粉塵'
+        - '&7(相同種類)'
+        - '&d= &f１ｘ魔法粉塵'
+        - '&7(合成出的更高等級)'
       item:
         type: STAINED_GLASS_PANE
         damage: 14
@@ -156,29 +156,28 @@ alchemist:
     cannot-afford:
       - '&cYou cannot afford this transaction'
     exceeds-max-level:
-      '&cYour combined level exceeds maximum enchantment level.'
+      '&c等級已超過附魔的最高級別.'
     trade-cancelled:
-      '&cTrade cancelled.'
+      '&c交易取消.'
 souls:
   enabled: true
-  lore: "&cSouls Collected: %souls%"
+  lore: "&c靈魂收集: %souls%"
   item:
     type: PAPER
     id: 0
-    name: "&f&lSoul Tracker"
+    name: "&f&l靈魂竊取者"
     lore:
-      - '&7Apply to weapons to start tracking'
-      - '&7souls collected from kills.'
+      - '&7使用武器以開始從戰鬥中收集靈魂'
     messages:
       success:
-        - '&a&l(!) &aYou successfully applied &f&lSoul Tracker &7to your item!'
+        - '&a&l(!) &a您已成功將 &f&l靈魂竊取者 &7附在您的物品上!'
 
 # Enchantments limitation
 # If lore contains the line, players wont be allowed to apply enchants to item
 enchantLimitation:
   enabled: true
-  lore: '&c&lUnmodifiable'
-  message: '&cThis item cannot be modified!'
+  lore: '&c&l無法修改'
+  message: '&c此物品已無法修改!'
 
 # Enchantment combining (leveling up) on items.
 # Example: https://media.giphy.com/media/26n6QDunj6iC3Z6Zq/giphy.gif
@@ -193,11 +192,11 @@ combining:
     upgrade: yes
   messages:
     successfull-combining:
-      - '&a&l(!) &aSuccessful, &7%enchant% is now level %level%!'
+      - '&a&l(!) &a附魔成功, &7%enchant% 現在等級 %level%!'
     failure:
-      - '&c&l(!) &cCombining failed!'
+      - '&c&l(!) &c附魔失敗!'
     already-max-level:
-      - '&c&l(!) &cNOTICE: This enchantment is already max level!'
+      - '&c&l(!) &c注意!: 此附魔以達到最高等級!'
 
 # Limit number of enchantments item can have
 slots:
