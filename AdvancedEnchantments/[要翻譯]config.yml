@@ -1,15 +1,15 @@
 # AdvancedEnchantments
 # Made by GC
-# Version: 8.0.0-Pre17.6
-# Release date: 2021/01/05
+# 版本: 8.0.0-Pre17.6
+# 發布日期: 2021/01/05
 
-# ** Commands and permissions
-# /enchanter - Open Enchanter; n permission
-# /tinkerer - Open Tinkerer; no permission
-# /gkits - Open GKits; no permission
-# /ae - Main plugin command; ae.help
-# /ae about - Information about current build; no permission
-# /ae list - List all custom enchantments; ae.list
+# ** 指令
+# /enchanter - 開啟AE選單
+# /tinkerer - 打開銷毀介面 (註:把物品變成一定的經驗值)
+# /gkits - 打開物品包
+# /ae - AE指令簡介
+# /ae about - 關於現AE版本的訊息
+# /ae list - 列出所有AE附魔
 # /ae admin - Open a menu with all possible enchantments (100% success rate); ae.admin
 # /ae giveitem <player> <item> - Give various plugin items; ae.giveitem
 # /ae give <player> <enchantment> <level> - Give custom enchanted book; ae.give
