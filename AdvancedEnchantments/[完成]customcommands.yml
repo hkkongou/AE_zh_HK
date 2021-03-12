@@ -137,19 +137,19 @@ enchantments:
         id: 1
         force-glow: false
         group: 'LEGENDARY'
-        name: "&7所有 &6&l獨特等級的附魔 &7(點擊打開)"
+        name: "&7所有 &6&l傳奇等級的附魔 &7(點擊打開)"
         lore:
         - ' &7點擊這裡 &f開啟預覽&7 所有'
-        - ' &7可用的 &6獨特 &7等級附魔!'
+        - ' &7可用的 &6傳奇 &7等級附魔!'
       22:
         type: STAINED_GLASS_PANE
         id: 14
         force-glow: false
         group: 'HEROIC'
-        name: "&7所有 &4&l獨特等級的附魔 &7(點擊打開)"
+        name: "&7所有 &4&l英雄等級的附魔 &7(點擊打開)"
         lore:
         - ' &7點擊這裡 &f開啟預覽&7 所有'
-        - ' &7可用的 &4傳奇 &7等級附魔!'
+        - ' &7可用的 &4英雄 &7等級附魔!'
       fill:
         type: STAINED_GLASS_PANE
         id: 15
