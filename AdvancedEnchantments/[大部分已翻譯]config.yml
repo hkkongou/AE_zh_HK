@@ -284,7 +284,7 @@ items:
     id: 0
     name: '&6&l物品標示名稱&7(右鍵)'
     lore:
-      - '&7重新命名和自定義您的裝備'
+      - '&7自定義命名您的裝備'
     messages:
       success:
         - '&a&l(!) &a您已成功將物品命名為 &e%name%'
@@ -544,10 +544,10 @@ enchanter:
         enchant-group: UNIQUE
         sound: ANVIL_LAND
         price: 代價Exp:800
-        name: '&a&l超絕'
+        name: '&a&l獨特'
         lore:
           - '&7點擊查看獲得隨機'
-          - '&a超絕 &7附魔書.'
+          - '&a獨特 &7附魔書.'
           - ''
           - '&b&l價格 &f%price% Exp &7(您需要 %left% 或者更多)'
       '4':
@@ -558,10 +558,10 @@ enchanter:
         enchant-group: ELITE
         price: 代價Exp:2500
         sound: ANVIL_LAND
-        name: '&b&l菁英'
+        name: '&b&l精英'
         lore:
           - '&7點擊查看獲得隨機'
-          - '&b菁英級 &7附魔書.'
+          - '&b精英級 &7附魔書.'
           - ''
           - '&b&l價格 &f%price% Exp &7(您需要 %left% 或者更多)'
       '5':
@@ -572,10 +572,10 @@ enchanter:
         enchant-group: ULTIMATE
         price: 代價Exp:5000
         sound: ANVIL_LAND
-        name: '&e&l終極'
+        name: '&e&l超級'
         lore:
           - '&7點擊查看獲得隨機'
-          - '&e終極 &7附魔書.'
+          - '&e超級 &7附魔書.'
           - ''
           - '&b&l價格 &f%price% Exp &7(您需要 %left% 或者更多)'
       '6':
@@ -586,10 +586,10 @@ enchanter:
         enchant-group: LEGENDARY
         price: 代價Exp:25000
         sound: ANVIL_LAND
-        name: '&6&l傳說'
+        name: '&6&l傳奇'
         lore:
           - '&7點擊查看獲得隨機'
-          - '&6傳說級 &7附魔書.'
+          - '&6傳奇 &7附魔書.'
           - ''
           - '&b&l價格 &f%price% Exp &7(您需要 %left% 或者更多)'
       '13':
