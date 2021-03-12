@@ -283,7 +283,7 @@ items:
   itemnametag:
     type: NAME_TAG
     id: 0
-    name: '&6&l物品名稱 &7(右鍵)'
+    name: '&6&l物品標示名稱&7(右鍵)'
     lore:
       - '&7重新命名和自定義您的裝備'
     messages:
@@ -398,15 +398,14 @@ items:
   holywhitescroll:
     type: PAPER
     id: 0
-    name: "&6&lHoly White Scroll"
+    name: "&6&l白色卷軸"
     lore:
-      - "&eA legendary reward that can"
-      - "&ebe applied to armor/weapons,"
-      - "&egives a 100% chance of not losing"
-      - "&ethe blessed item on death."
+      - "&e願望保護一件道具免於附魔損壞?"
+      - "&e點選並置於一個將附魔的道具上"
+      - "&e它將守護其免遭損壞命運"
     messages:
       applied:
-        - '&7You successfully applied &6&lHoly White Scroll'
+        - '&7您成功使您成功使用了&6&lHoly White Scroll'
     settings:
       lore-display: '&e&l*&f&lHOLY&e&l* &f&lPROTECTED'
       # Keep holywhitescroll equipped to item even after death
