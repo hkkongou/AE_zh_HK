@@ -268,7 +268,7 @@ items:
     id: 0
     name: '&c&lTransmog Scroll'
     lore:
-      - "&7根據物品的 &e&稀有度y&7 附魔"
+      - "&7根據物品的 &e&n稀有度&7 附魔"
       - "&7並且在名字中增加&b計算&7."
       - ""
       - "&e&o將卷軸放置於要使用的物品上."
@@ -309,7 +309,7 @@ items:
     name: '%group-color%%group-name%&l%group-color% 隨機卷軸'
     lore:
       - ''
-      - '&7適用於任何 %group-color%%group-name% &7　附魔書'
+      - '&7適用於任何 %group-color%%group-name% &7附魔書'
       - '&7以獲得成功或失敗的機率.'
       - ''
       - '&7拖曳到附魔書上來使用'
@@ -318,9 +318,9 @@ items:
     id: 0
     name: '&f&l黑色卷軸'
     lore:
-      - '&7被強加了意所不滿的附魔?'
-      - '&7點選並置於一份附魔物品上'
-      - '&7它將隨機移除一項附魔'
+      - '&7從一件道具上隨機移除一項附魔'
+      - '&7並且轉化成 &f%success%% &7成功附魔書.'
+      - '&7請將卷軸點擊在一件附魔物品上'
     success: 95
     destroy: 5
     random: true
