@@ -1,27 +1,27 @@
 # AdvancedEnchantments
 # Made by GC
-# Version: 8.0.0-Pre17.6
-# Release date: 2021/01/05
+# 版本: 8.0.0-Pre17.6
+# 發布日期: 2021/01/05
 
-# ** Commands and permissions
-# /enchanter - Open Enchanter; n permission
-# /tinkerer - Open Tinkerer; no permission
-# /gkits - Open GKits; no permission
-# /ae - Main plugin command; ae.help
-# /ae about - Information about current build; no permission
-# /ae list - List all custom enchantments; ae.list
+# ** 指令
+# /enchanter - 開啟AE選單
+# /tinkerer - 打開銷毀介面 (註:把物品變成一定的經驗值)
+# /gkits - 打開工具包
+# /ae - AE指令簡介; ae.help
+# /ae about - 關於現AE版本的訊息
+# /ae list - 列出所有AE附魔; ae.list
 # /ae admin - Open a menu with all possible enchantments (100% success rate); ae.admin
-# /ae giveitem <player> <item> - Give various plugin items; ae.giveitem
-# /ae give <player> <enchantment> <level> - Give custom enchanted book; ae.give
-# /ae info <enchantment> - Information about custom enchantment; ae.info
-# /ae reload - Reload all configurations; ae.reload
-# /ae enchant <enchantment> <level> - Enchant item; ae.enchant
-# /ae givebook <player> <enchantment> <level> <count> <success> <destroy> - Give book with specific rates; ae.givebook
+# /ae giveitem <玩家> <物品> - 給予指定玩家一個AE特殊物品; ae.giveitem
+# /ae give <玩家> <附魔名稱> <等級> - 給予指定玩家一本指定AE附魔書還有附魔等級; ae.give
+# /ae info <附魔名稱> - 關於AE附魔書的介紹; ae.info
+# /ae reload - 重新啟動插件; ae.reload
+# /ae enchant <附魔名稱> <等級> - 附魔慣用手上的物品; ae.enchant
+# /ae givebook <玩家> <附魔名稱> <等級> <數量> <成功機率> <失敗機率> - 給予指定玩家一本AE附魔書; ae.givebook
 # /ae givercbook <type> <player> <amount> - Give right-clickable book; ae.givercbook
 # /ae giverandombook <player> <group> - Gives random book from group; ae.giverandombook
 # /ae pasteenchants - Pastes formatted enchantments list; ae.admin
 # /alchemist - Open alchemist; no permission
-# /ae givegkit <player> <gkit> - Give player gkit items; ae.givegkit
+# /ae givegkit <player> <gkit> - 給予玩家AE工具包的特定物品; ae.givegkit
 
 # /aegive - Give player gkit items; ae.give
 # Example: /aegive GC diamond_helmet 1 name:&&7cItem_name protection:5 glowing:1 lore:&&7cLore_line_#1|&&7cSecond_Line
@@ -34,11 +34,11 @@
 # Manage plugin commands
 commands:
   advancedenchantments:
-    # Should 'no permission' message be shown when
-    # user does not have 'ae.help' permission
+    # 若沒有權限應會出現"沒有權限"等訊息
+    # 使用者沒有 'ae.help'權限
     permissionMessageEnabled: true
     permissionMessage:
-      - '&6&lAdvancedEnchantments &cYou do not have permission to use this command.'
+      - '&6&lAdvancedEnchantments &c您沒有此權限可以使用此操作.'
   enchanter:
     # Is command enabled?
     enabled: true
@@ -67,7 +67,7 @@ commands:
     enabled: true
     command: /apply
     aliases:
-      - 'reapply'
+      - '重新修復'
 
 permissions:
   enchanter:
@@ -109,35 +109,33 @@ alchemist:
     pre-set-pricing:
       price: 250
   messages:
-    inv-name: "Alchemist"
+    inv-name: "漆黑鑄造者及妄想之道具"
     item-preview:
-      name: "&e&lItem Preview"
+      name: "&e&l物品預覽"
       lore:
-        - '&7A preview of item you will'
-        - '&7receive from the Alchemist'
-        - '&7will be displayed here.'
+        - '&7附魔書以及魔法粉塵'
+        - '&7合成的專屬介面'
       item:
         type: STAINED_GLASS_PANE
         damage: 0
     item-explanation:
-      name: "&e&lAlchemist"
+      name: "&e&l漆黑鑄造者及妄想之道具"
       lore:
-        - '&7The Alchemist will Exchange...'
         - ''
-        - '&b&l* &f2X Enchantment Books'
-        - '&7(of the same type and level)'
-        - '&d= &f1X Enchantment Book'
-        - '&7(of higher level)'
+        - '&b&l* &f２ｘ附魔書'
+        - '&7(相同類型和等級才可升級)'
+        - '&d= &f１ｘ附魔書'
+        - '&7(合成出的更高等級)'
         - ''
-        - '&b&l* &f2X Magic Dust'
-        - '&7(of the same rarity)'
-        - '&d= &f1X Magic Dust'
-        - '&7(of higher chances)'
+        - '&b&l* &f2２ｘ魔法粉塵'
+        - '&7(相同種類)'
+        - '&d= &f１ｘ魔法粉塵'
+        - '&7(合成出的更高等級)'
       item:
         type: STAINED_GLASS_PANE
         damage: 14
     item-combine:
-      name: "&b&l點擊這裡交換"
+      name: "&b&l點擊這裡進行交換"
       lore:
         - '&c&l消耗 &c%price% 經驗值'
         - ''
@@ -154,31 +152,30 @@ alchemist:
         type: STAINED_GLASS_PANE
         damage: 15
     cannot-afford:
-      - '&cYou cannot afford this transaction'
+      - '&c您沒錢完成這筆交易'
     exceeds-max-level:
-      '&cYour combined level exceeds maximum enchantment level.'
+      '&c等級已超過附魔的最高級別.'
     trade-cancelled:
-      '&cTrade cancelled.'
+      '&c交易取消.'
 souls:
   enabled: true
-  lore: "&cSouls Collected: %souls%"
+  lore: "&c靈魂收集: %souls%"
   item:
     type: PAPER
     id: 0
-    name: "&f&lSoul Tracker"
+    name: "&f&l靈魂竊取者"
     lore:
-      - '&7Apply to weapons to start tracking'
-      - '&7souls collected from kills.'
+      - '&7使用武器以開始從戰鬥中收集靈魂'
     messages:
       success:
-        - '&a&l(!) &aYou successfully applied &f&lSoul Tracker &7to your item!'
+        - '&a&l(!) &a您已成功將 &f&l靈魂竊取者 &7附在您的物品上!'
 
 # Enchantments limitation
 # If lore contains the line, players wont be allowed to apply enchants to item
 enchantLimitation:
   enabled: true
-  lore: '&c&lUnmodifiable'
-  message: '&cThis item cannot be modified!'
+  lore: '&c&l無法修改'
+  message: '&c此物品已無法修改!'
 
 # Enchantment combining (leveling up) on items.
 # Example: https://media.giphy.com/media/26n6QDunj6iC3Z6Zq/giphy.gif
@@ -193,11 +190,11 @@ combining:
     upgrade: yes
   messages:
     successfull-combining:
-      - '&a&l(!) &aSuccessful, &7%enchant% is now level %level%!'
+      - '&a&l(!) &a附魔成功, &7%enchant% 現在等級 %level%!'
     failure:
-      - '&c&l(!) &cCombining failed!'
+      - '&c&l(!) &c附魔失敗!'
     already-max-level:
-      - '&c&l(!) &cNOTICE: This enchantment is already max level!'
+      - '&c&l(!) &c注意!: 此附魔以達到最高等級!'
 
 # Limit number of enchantments item can have
 slots:
@@ -211,7 +208,7 @@ slots:
   display-in-lore: false
   display: '&eItem Slots&7: %left%'
   message:
-    - '&c&l(!) &cYou have reached maximum limit for enchantments this item!'
+    - '&c&l(!) &c您已達到此物品的最大附魔上限！'
 
 applying:
   cosmetics:
@@ -222,13 +219,13 @@ applying:
       particle: 'LAVA_POP'
       sound: 'ANVIL_BREAK'
   already-applied:
-    - '&c&l(!) &cThe item already has this enchantment.'
+    - '&c&l(!) &c這個物品已存在相同附魔性質.'
   applied:
-    - '&a&l(!) &aEnchantment was applied to your item.'
+    - '&a&l(!) &a附魔以新增到您的物品上.'
   max-level:
-    - '&c&l(!) &cThis enchantment is already at max level!'
+    - '&c&l(!) &c這個附魔以達到最高級別'
   wrong-material:
-    - '&c&l(!) &cThis enchantment cannot be applied on this item.'
+    - '&c&l(!) &c此附魔不能用於此物品上.'
 
 enchanter-books:
   firework-on-open: true
@@ -241,14 +238,14 @@ enchanter-books:
   # %enchant-color% - enchantment name with color
   # %level% - level number in roman
   message:
-    - '&7You examined %group-color%%group%&7 book and found %enchant-color% %level%'
+    - '&7您以檢查了 %group-color%%group%&7 並發現了 %enchant-color% %level%'
   type: BOOK
   id: 0
   force-glow: false
-  name: '%group-color%&l%group-name%&l Enchantment Book &7(Right Click)'
+  name: '%group-color%&l%group-name%&l 附魔書 &7(右鍵)'
   lore:
-    - '&7Right Click while holding to receive a random'
-    - '%group-color%%group-name% &7enchantment book.'
+    - '&7點擊右鍵將會接收到隨機'
+    - '%group-color%%group-name% &7附魔書.'
 
 items:
   settings:
@@ -271,32 +268,32 @@ items:
     id: 0
     name: '&c&lTransmog Scroll'
     lore:
-      - "&7Organizes enchants by &e&nrarity&7 on item"
-      - "&7and adds the &dlore &bcount&7 to name."
+      - "&7根據物品的 &e&稀有度y&7 附魔"
+      - "&7並且在名字中增加&b計算&7."
       - ""
-      - "&e&oPlace scroll on item to apply."
+      - "&e&o將卷軸放置於要使用的物品上."
     enchants-count-formatting: "&d[&b&n%count%&d]"
   soulgem:
     type: EMERALD
     id: 0
-    name: "&c&lSoul Gem &7[&a%count%&7]"
+    name: "&c&l靈魂石 &7[&a%count%&7]"
     lore:
-      - '&7Apply to an item to add souls.'
+      - '&7添加到物品上以增加靈魂數量.'
   itemnametag:
     type: NAME_TAG
     id: 0
-    name: '&6&lItem NameTag &7(Right Click)'
+    name: '&6&l物品標示名稱&7(右鍵)'
     lore:
-      - '&7Rename and customize your equipment'
+      - '&7自定義命名您的裝備'
     messages:
       success:
-        - '&a&l(!) &aYou have successfully renamed your item to &e%name%'
+        - '&a&l(!) &a您已成功將物品命名為 &e%name%'
       activated:
         - '&a&l(!) &aYour next message will rename your item in hand'
       air:
-        - '&c&l(!) &cYou need to be holding an item to do this'
+        - '&c&l(!) &c你需要把物品拿在手上'
       renaming-not-enchanted-item:
-        - '&c&l(!) &cYou can only rename enchanted items'
+        - '&c&l(!) &c您只能重新命名附魔的物品'
     settings:
       # Should colors be allowed
       colors: true
@@ -309,61 +306,59 @@ items:
   randomization-scroll:
     type: PAPER
     id: 0
-    name: '%group-color%%group-name%&l%group-color% Randomization Scroll'
+    name: '%group-color%%group-name%&l%group-color% 隨機卷軸'
     lore:
       - ''
-      - '&7Apply to any %group-color%%group-name% &7Enchantment Book'
-      - '&7to reroll the success and destroy rates.'
+      - '&7適用於任何 %group-color%%group-name% &7　附魔書'
+      - '&7以獲得成功或失敗的機率.'
       - ''
-      - '&7Drag n'' drop onto &nenchantment book&7 to apply.'
+      - '&7拖曳到附魔書上來使用'
   black-scroll:
     type: INK_SACK
     id: 0
-    name: '&f&lBlack Scroll'
+    name: '&f&l黑色卷軸'
     lore:
-      - '&7Removes a random enchantment'
-      - '&7from an item and converts'
-      - '&7it into a &f%success%% &7success book.'
-      - '&fPlace scroll onto item to extract.'
+      - '&7被強加了意所不滿的附魔?'
+      - '&7點選並置於一份附魔物品上'
+      - '&7它將隨機移除一項附魔'
     success: 95
     destroy: 5
     random: true
     messages:
-      noEnchantments: '&c&l(!)&c This item has &l0&c enchantments!'
-      cannotBeRemoved: '&c&l(!)&c %enchant% cannot be removed as it''s invalid.'
+      noEnchantments: '&c&l(!)&c 此物品尚未被附魔'
+      cannotBeRemoved: '&c&l(!)&c %enchant% 無法刪除，因為失效.'
   secret-dust:
     type: FIREBALL
     id: 0
-    name: '%group-color%%group-name%%group-color% Secret Dust &7(Right Click)'
+    name: '%group-color%%group-name%%group-color% 神秘粉塵'
     lore:
-      - '&7Contains: &bMagic, &fMystery &7dust.'
-      - '&7An unidentified satchel of dust.'
+      - '&7包含: &b魔法&7、&f神秘 &7粉塵.'
+      - '&7身分不明的粉塵.'
   mystery-dust:
     type: SULPHUR
     id: 0
-    name: '&fMystery Dust'
+    name: '&f神秘粉塵'
     lore:
-      - '&7A failed bi-product'
-      - '&7of Magic dust.'
+      - '&7魔法粉塵失敗的副產物.'
   magic-dust:
     type: SUGAR
     id: 0
-    name: '%group-color%%group-name%%group-color% Magic Dust'
+    name: '%group-color%%group-name%%group-color% 魔法粉塵'
     lore:
-      - '&a+%percent%% Success'
-      - '&7Apply to a &7any %group-color%%group-name% &7Enchantment Book'
-      - '&7to increase its success by %group-color%%percent%%'
+      - '&a+%percent%% 成功'
+      - '&7適用於 &7任何 %group-color%%group-name% &7附魔書'
+      - '&7來增加 %group-color%%percent%% 成功的機率'
     messages:
-      cannotApplyToStacked: '&c&l(!) &cCannot be applied to stacked books'
+      cannotApplyToStacked: '&c&l(!) &c不能使用於疊加的附魔書'
   slot-increaser:
     type: EYE_OF_ENDER
     id: 0
     name: "%group-color%&l%group-name% Slot Increaser"
     lore:
-      - '&7Increase slots limit on an item by &a+%count%'
+      - '&7增加附魔書上的附魔數量+%count%'
     messages:
       success:
-        - '&a&l(!) &aYou have successfully increased maximum slots on item by %count%!'
+        - '&a&l(!) &a您已成功增加了該物品的附魔數量 %count%!'
   blocktrak:
     type: SLIME_BALL
     id: 0
@@ -403,82 +398,78 @@ items:
   holywhitescroll:
     type: PAPER
     id: 0
-    name: "&6&lHoly White Scroll"
+    name: "&6&l白色卷軸"
     lore:
-      - "&eA legendary reward that can"
-      - "&ebe applied to armor/weapons,"
-      - "&egives a 100% chance of not losing"
-      - "&ethe blessed item on death."
+      - "&e願望保護一件道具免於附魔損壞?"
+      - "&e點選並置於一個將附魔的道具上"
+      - "&e它將守護其免遭損壞命運"
     messages:
       applied:
-        - '&7You successfully applied &6&lHoly White Scroll'
+        - '&7您成功使用了&6&l白色卷軸'
     settings:
-      lore-display: '&e&l*&f&lHOLY&e&l* &f&lPROTECTED'
+      lore-display: '&e&l*&f&l神聖&e&l* &f&l保護'
       # Keep holywhitescroll equipped to item even after death
       keep-after-death: false
   # Orbs allow applying x number of enchants
   orb:
-    lore: '&a%max% Enchantment Slots &7(Orb [&a+%increased%&7])'
+    lore: '&a%max% 附魔插槽 &7(寶珠 [&a+%increased%&7])'
     weapon:
       material: EYE_OF_ENDER
-      name: '&6&lWeapon Enchantment Orb &6[&a&n%max%&6]'
+      name: '&6&l武器附魔球 &6[&a&n%max%&6]'
       lore:
-        - '&a%success%% Success Rate'
+        - '&a%success%% 成功率'
         - ''
-        - '&6+%new% Enchantment slots'
-        - '&6%max% Max Enchantment Slots'
+        - '&6+%new% 附魔插槽'
+        - '&6%max% 最大附魔插槽'
         - ''
-        - '&eIncreases the # of enchantment'
-        - '&eslots on a weapon by %new%,'
-        - '&eup to a maximum of %max%'
-        - '&7Drag n'' Drop onto an item to apply.'
+        - '&e將一個武器附魔插槽數量增加到 %new%,'
+        - '&e最多增加 %max%'
+        - '&7拖曳到道具上來使用.'
     armor:
       material: EYE_OF_ENDER
-      name: '&6&lArmor Enchantment Orb &6[&a&n%max%&6]'
+      name: '&6&l裝備附魔球 &6[&a&n%max%&6]'
       lore:
-        - '&a%success%% Success Rate'
+        - '&a%success%% 成功率'
         - ''
-        - '&6+%new% Enchantment slots'
-        - '&6%max% Max Enchantment Slots'
+        - '&6+%new% 附魔插槽'
+        - '&6%max% 最大附魔插槽'
         - ''
-        - '&eIncreases the # of enchantment'
-        - '&eslots on a piece of armor by %new%,'
-        - '&eup to a maximum of %max%'
-        - '&7Drag n'' Drop onto an item to apply.'
+        - '&e將一個裝備附魔插槽數量增加到 %new%,'
+        - '&e最多增加 %max%'
+        - '&7拖曳到道具上來使用.'
     tool:
       material: EYE_OF_ENDER
-      name: '&6&lTool Enchantment Orb &6[&a&n%max%&6]'
+      name: '&6&l工具附魔球 &6[&a&n%max%&6]'
       lore:
-        - '&a%success%% Success Rate'
+        - '&a%success%% 成功率'
         - ''
-        - '&6+%new% Enchantment slots'
-        - '&6%max% Max Enchantment Slots'
+        - '&6+%new% 附魔插槽'
+        - '&6%max% 最大附魔插槽'
         - ''
-        - '&eIncreases the # of enchantment'
-        - '&eslots on a tool by %new%,'
-        - '&eup to a maximum of %max%'
-        - '&7Drag n'' Drop onto an item to apply.'
+        - '&e將一個工具附魔插槽數量增加到 %new%,'
+        - '&e最多增加 %max%'
+        - '&7拖曳到道具上來使用.'
 
 white-scroll:
   # Obtain white scroll by giving it with command '/ae giveitem <player> whitescroll'
   # Should the white scroll be removed once applied enchantment fails?
   delete: true
   # Display in item lore
-  lore-display: '&f&lPROTECTED'
+  lore-display: '&f&l保護'
   item:
     type: EMPTY_MAP
     id: 0
     force-glow: false
-    name: '&fWhite Scroll'
+    name: '&f白色卷軸'
     lore:
-      - '&fPrevents an item from being destroyed'
-      - '&fdue to a failed Enchantment Book.'
-      - '&ePlace scroll on item to apply.'
+      - "&e願望保護一件道具免於附魔損壞?"
+      - "&e點選並置於一個將附魔的道具上"
+      - "&e它將守護其免遭損壞命運"
   messages:
     applied:
-      - '&a&l(!) &aWhite scroll has been applied to your item.'
+      - '&a&l(!) &a白色卷軸以使用至道具上.'
     failed:
-      - '&c&l(!) &cWhite scroll saved the item.'
+      - '&c&l(!) &c白色卷軸使用失敗.'
 
 enchanter:
   # set to 'none' to disable
@@ -488,12 +479,12 @@ enchanter:
     - 'bad_world'
   messages:
     cannot-afford:
-      - '&cYou do not have enough EXP to purchase that.'
-      - '&7Your XP: %exp%'
+      - '&c您沒有足夠的經驗值來購買.'
+      - '&7你目前的經驗值: %exp%'
     successfull-purchase:
-      - '&a&l(!) &aSuccessful purchase!'
+      - '&a&l(!) &a購買成功!'
     inventory-is-full:
-      - '&c&l(!) &cYour inventory is full!'
+      - '&c&l(!) &c您的背包已滿!'
     sound: LEVEL_UP
     # 1.8 Sound == LEVEL_UP
   right-click-to-view-enchants: true
@@ -502,7 +493,7 @@ enchanter:
     item:
       type: NETHER_STAR
       id: 0
-    name: '&c&lGo Back'
+    name: '&c&l返回'
     lore: []
   # Should enchanter stay open after item is bought?
   keep-open: true
@@ -517,7 +508,7 @@ enchanter:
   # exp, money, level, souls (works with items that are held when opening inventory), diamonds, gold (gold ingots), emeralds
   inventory:
     size: 18
-    name: '&7Server Enchanter'
+    name: '&7伺服器附魔師'
     settings:
       # Which level books should enchanter give?
       # 'ALL' - gives all levels
@@ -537,14 +528,14 @@ enchanter:
           id: 0
           force-glow: false
         enchant-group: SIMPLE
-        price: exp:400
+        price: 代價Exp:400
         sound: ANVIL_LAND
-        name: '&f&lSimple Enchantment &7(Right Click)'
+        name: '&f&l普通'
         lore:
-          - '&7Examine to recieve a random'
-          - '&fsimple &7enchantment book.'
+          - '&7點擊查看獲得隨機'
+          - '&f普通 &7附魔書.'
           - ''
-          - '&b&lCOST &f%price% EXP &7(You need %left% more EXP)'
+          - '&b&l價格 &f%price% Exp &7(您需要 %left% 或者更多)'
       '3':
         item:
           type: STAINED_GLASS_PANE
@@ -552,69 +543,69 @@ enchanter:
           force-glow: false
         enchant-group: UNIQUE
         sound: ANVIL_LAND
-        price: exp:800
-        name: '&a&lUnique Enchantment &7(Right Click)'
+        price: 代價Exp:800
+        name: '&a&l獨特'
         lore:
-          - '&7Examine to recieve a random'
-          - '&aunique &7enchantment book.'
+          - '&7點擊查看獲得隨機'
+          - '&a獨特 &7附魔書.'
           - ''
-          - '&b&lCOST &f%price% EXP &7(You need %left% more)'
+          - '&b&l價格 &f%price% Exp &7(您需要 %left% 或者更多)'
       '4':
         item:
           type: STAINED_GLASS_PANE
           id: 3
           force-glow: false
         enchant-group: ELITE
-        price: exp:2500
+        price: 代價Exp:2500
         sound: ANVIL_LAND
-        name: '&b&lElite Enchantment &7(Right Click)'
+        name: '&b&l精英'
         lore:
-          - '&7Examine to recieve a random'
-          - '&belite &7enchantment book.'
+          - '&7點擊查看獲得隨機'
+          - '&b精英級 &7附魔書.'
           - ''
-          - '&b&lCOST &f%price% EXP &7(You need %left% more)'
+          - '&b&l價格 &f%price% Exp &7(您需要 %left% 或者更多)'
       '5':
         item:
           type: STAINED_GLASS_PANE
           id: 4
           force-glow: false
         enchant-group: ULTIMATE
-        price: exp:5000
+        price: 代價Exp:5000
         sound: ANVIL_LAND
-        name: '&e&lUltimate Enchantment &7(Right Click)'
+        name: '&e&l超級'
         lore:
-          - '&7Examine to recieve a random'
-          - '&eultimate &7enchantment book.'
+          - '&7點擊查看獲得隨機'
+          - '&e超級 &7附魔書.'
           - ''
-          - '&b&lCOST &f%price% EXP &7(You need %left% more)'
+          - '&b&l價格 &f%price% Exp &7(您需要 %left% 或者更多)'
       '6':
         item:
           type: STAINED_GLASS_PANE
           id: 1
           force-glow: false
         enchant-group: LEGENDARY
-        price: exp:25000
+        price: 代價Exp:25000
         sound: ANVIL_LAND
-        name: '&6&lLegendary Enchantment &7(Right Click)'
+        name: '&6&l傳奇'
         lore:
-          - '&7Examine to recieve a random'
-          - '&6legendary &7enchantment book.'
+          - '&7點擊查看獲得隨機'
+          - '&6傳奇 &7附魔書.'
           - ''
-          - '&b&lCOST &f%price% EXP &7(You need %left% more)'
+          - '&b&l價格 &f%price% Exp &7(您需要 %left% 或者更多)'
       '13':
         item:
           type: STAINED_GLASS_PANE
           id: 14
           force-glow: false
         enchant-group: HEROIC
-        price: exp:50000
+        price: 代價Exp:50000
         sound: ANVIL_LAND
-        name: '&4&lHeroic Enchantment &7(Right Click)'
+        name: '&4&l英雄'
         lore:
-          - '&7Examine to recieve a random'
-          - '&4heroic &7enchantment book.'
+          - '&7點擊查看獲得隨機'
+          - '&4英雄級 &7附魔書.'
           - ''
-          - '&b&lCOST &f%price% EXP &7(You need %left% more)'
+          - '&b&l價格 &f%price% Exp &7(您需要 %left% 或者更多)'
       '9':
         item:
           type: ANVIL
@@ -623,11 +614,11 @@ enchanter:
         sound: ANVIL_USE
         player-command:
           - 'tinkerer'
-        name: '&fOpen &b&lTinkerer &7(Right Click)'
+        name: '&fOpen &b&lTinkerer'
         lore:
           - '&7Tinker books for Magic Dusts and EXP.'
           - ''
-          - '&b&lRight Click to visit'
+          - '&b&l點擊查看'
       '17':
         item:
           type: ENDER_PORTAL_FRAME
@@ -636,11 +627,11 @@ enchanter:
         sound: ARROW_HIT
         player-command:
           - 'alchemist'
-        name: '&fOpen &b&lAlchemist &7(Right Click)'
+        name: '&f打開 &b&l漆黑鑄造者'
         lore:
-          - '&7Combine Books and Magic Dusts.'
+          - '&7結合附魔書還有魔法粉塵.'
           - ''
-          - '&b&lRight Click to visit'
+          - '&b&l點擊查看'
 
 destroy:
   # Should book be destroyed if it fails?
@@ -649,7 +640,7 @@ destroy:
   destroy-item: true
   # Enchantment fail message.
   message:
-    - '&c&l(!) &cEnchantment was unsuccessful'
+    - '&c&l(!) &c附魔失敗!'
 
 chances:
   # Should book chances be random?
@@ -663,23 +654,23 @@ chances:
   destroy-if-fail:
     enabled: true
     message:
-      - '&c&l(!) &cYour book failed but item wasn''t destroyed!'
+      - '&c&l(!) &c您的附魔書以失敗，但物品並沒有被銷毀!'
 
 # Confirmation inventory for enchanter payments
 # Confirm or deny the transaction, acts like 2-step confirmation
 confirmation-inventory:
   enabled: true
-  name: '&aConfirmation Inventory'
+  name: '&a確認清單'
   accept:
     material: STAINED_GLASS_PANE
     damage: 5
-    name: '&aAccept Transaction'
+    name: '&a接受交易'
     lore:
-      - '&7Click this to pay %price% with %paymentType%'
+      - '&7點擊這裡以 %price% 支付 %paymentType%'
   cancel:
     material: STAINED_GLASS_PANE
     damage: 14
-    name: '&cClick to cancel'
+    name: '&c點擊取消'
     lore: []
 
 # Armor Switching (Right click while holding a piece of armor you're already wearing and they will be switched)
@@ -697,33 +688,33 @@ enchantment-book:
     # Variables: %enchant%, %enchant-no-color%, %description%, %applies%, %success%, %destroy%, %color%, %max-level%
   name: '%group-color%&l&n%enchant-no-color% %level%'
   lore:
-    - '&a%success%% Success Rate'
-    - '&c%destroy%% Destroy Rate'
+    - '&a%success%% 成功率'
+    - '&c%destroy%% 失敗率'
     - '&e%description%'
     - '&7%applies% Enchantment'
-    - '&7Drag n'' drop onto item to enchant'
+    - '&7拖曳並拉到物品上使物品附魔'
 
 messages:
   main-hand-only: '&cYou can only do this with main hand!'
   command:
     # Variables: %enchant%, %description%, %applies%, %max-level%
     info:
-      - '&eInformation about &6%enchant% &eenchantment&7:'
-      - '&6Description&7: &e%description%'
-      - '&6Applies to&7: &e%applies%'
-      - '&6Max level&7: &e%max-level%'
+      - '&e相關訊息 &6%enchant% &eenchantment&7:'
+      - '&6描述 &7: &e%description%'
+      - '&6適用於 &7: &e%applies%'
+      - '&6最高等級&7: &e%max-level%'
     enchantment-not-found:
-      - '&cEnchantment &c&n%enchant%&c could not be found.'
-    player-not-online: '&f%player% &cis not online!'
-    no-permission: '&cYou do not have permission to use this command.'
-    not-a-number: '&f%number% &cis not a number!'
-    invalid-level: '&cLevel is too big, try using:&f %levels%'
-  enchantment-cannot-be-removed: '&cEnchantment %enchant% cannot be removed!'
-  cannot-apply-with: '&7Enchantment cannot be applied together with &c%enchant%&7 enchant.'
-  requires-enchant: '&7Enchantment requires &c%enchant% &7enchant to be applied.'
+      - '&c未找到此附魔 : &c&n%enchant%&c '
+    player-not-online: '&f%player% &c不再線上'
+    no-permission: '&c你沒有權限這麼做.'
+    not-a-number: '&f%number% &c沒有這個數字!'
+    invalid-level: '&c等級過高，請嘗試使用 :&f %levels%'
+  enchantment-cannot-be-removed: '&c此附魔 %enchant% 無法被刪除!'
+  cannot-apply-with: '&7此附魔書不能與 &c%enchant%&7 一起使用.'
+  requires-enchant: '&7此附魔需要 &c%enchant% &7來施加.'
   apply:
-    cooldown: '&cYou will be able to use this command in %seconds% seconds.'
-    reapplied: '&aYour armor has been re-applied.'
+    cooldown: '&c您將在 %seconds% 內來執行此操作.'
+    reapplied: '&a您的護甲已重新被啟用.'
 
 settings:
   # Should enchantments on items be organized automatically in lore based on rarity?
@@ -736,7 +727,7 @@ settings:
   steal-money:
     message-enabled: false
     # replace with 'you' instead of player name for directed player
-    message: '&6%attacker% &7stole &6%amount% &7from &6%victim%'
+    message: '&6%attacker% &7偷了 &6%amount% &7來自於 &6%victim%'
 
   # After how many sequential hits combo should reset?
   combo-limit: 5
