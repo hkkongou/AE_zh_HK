@@ -7053,8 +7053,8 @@ divineimmolation:
         - 'ADD_HARM:2 <aoe> radius=5 target=damageable </aoe>'
         - 'MESSAGE:&c&l** DIVINE IMMOLATION ** <aoe> radius=5 target=damageable </aoe>'
 paradox:
-  display: '%group-color%Paradox'
-  description: "Passive soul enchantment.\nHeals all nearby allies in a massive\narea around you for a portion of\nall damage dealt to you."
+  display: '%group-color%矛盾打擊(paradox)'
+  description: "被動靈魂附魔.\n在一個大範圍內\n用自身部分所受傷害\n治療你的盟友."
   applies-to: 'Swords'
   type: 'DEFENSE'
   group: 'SOUL'
@@ -7102,8 +7102,8 @@ paradox:
         - 'ADD_HEALTH:<math>%damage%/2</math> <aoe> radius=7 target=undamageable </aoe>'
         - 'MESSAGE:&c&l** PARADOX ** <aoe> radius=7 target=undamageable </aoe>'
 soulgrind:
-  display: '%group-color%SoulGrind'
-  description: 'Random chance to get a souls for killing mobs.'
+  display: '%group-color%靈魂掠奪(SoulGrind)'
+  description: '擊殺生物機率掉落靈魂'
   applies-to: 'Swords'
   type: 'KILL_MOB'
   group: 'MASTERY'
@@ -7126,8 +7126,8 @@ soulgrind:
       effects:
         - 'CONSOLE_COMMAND:ae giveitem %attacker name% soulgem 1 10'
 neutralize:
-  display: '%group-color%Neutralize'
-  description: "Chance to disable all enemy defensive enchantment's for 7 seconds.\nThis effect can stack with silence."
+  display: '%group-color%正面對決(neutralize)'
+  description: "有機率使敵人的防禦性附魔失效7秒\n這個附魔可以與沉靜附魔疊加"
   applies-to: "Swords"
   type: ATTACK
   group: MASTERY
@@ -7196,8 +7196,8 @@ neutralize:
         - DISABLE_ACTIVATION:lucky:5 %victim%
         - MESSAGE:&4&l* Neutralized&r &4[5s] &4&l* %victim%
 halloweenify:
-  display: '%group-color%Halloweenify'
-  description: 'Chance to replace your opponents helmet to a pumpkin for a short time.'
+  display: '%group-color%恐懼(halloweenify)'
+  description: '有機率使敵人的頭盔替換成南瓜頭'
   applies-to: 'Weapons'
   type: 'ATTACK'
   group: 'MASTERY'
@@ -7241,8 +7241,8 @@ halloweenify:
         - 'MESSAGE:&e&l** HALLOWEENIFY ** %victim%'
         - 'PLAY_SOUND_OUTLOUD:ANVIL_DROP'
 markofthebeast:
-  display: '%group-color%Mark of the Beast'
-  description: "Once an enemy is afflicted with the mark\nall incoming damage is increased by 2x for\nup to 5 seconds"
+  display: '%group-color%野性標記(markofthebeast)'
+  description: "當敵人被標記時\n所有的傷害會乘以2\n最多持續5秒"
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'MASTERY'
@@ -7316,8 +7316,8 @@ markofthebeast:
         - 'INCREASE_DAMAGE:50 %attacker%'
         - 'WAIT:20'
 horrify:
-  display: '%group-color%Horrify'
-  description: 'Chance to inflict enemies within a 32x32 radius with &6Horror&r.'
+  display: '%group-color%驚嚇(horrify)'
+  description: '有機率對32x32區域內的敵人造成 &6驚嚇&r.'
   applies-to: 'Armor'
   type: 'DEFENSE'
   group: 'MASTERY'
@@ -7357,8 +7357,8 @@ horrify:
         - 'POTION:SLOW_DIGGING:23:80 <aoe> radius=32 target=damageable </aoe>'
         - 'MESSAGE:&4&l** HORRIFY ** <aeo> radius=32 target=damageable </aoe>'
 chainlifesteal:
-  display: '%group-color%Chain Lifesteal'
-  description: 'A chance to regain health from multiple\nenemies near your damaged target based on level'
+  display: '%group-color%多重吸血(chainlifesteal)'
+  description: '有機率偷取區域內\n敵人的血量'
   applies-to: 'Chestplate'
   type: 'ATTACK'
   group: 'MASTERY'
@@ -7378,8 +7378,8 @@ chainlifesteal:
         - 'STEAL_HEALTH:<random number>1-3</random number> <aoe> radius=6 target=damageable </aoe>'
         - 'MESSAGE:&4&l** CHAIN LIFESTEAL ** &7(-5 &cHP&7) <aoe> radius=6 target=damageable </aoe>'
 soulsiphone:
-  display: '%group-color%Soul Siphone'
-  description: "Proc'ing on outgoing damage events this enchant siphons souls\nand durability from enemies in large quantities!."
+  display: '%group-color%靈魂虹吸(soulsiphone)'
+  description: "有機率使攻擊你的敵人遭受靈魂破壞200點\n並且盔甲耐久度破損10點!."
   applies-to: 'Boots'
   type: 'DEFENSE'
   group: 'MASTERY'
