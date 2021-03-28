@@ -7053,7 +7053,7 @@ divineimmolation:
         - 'ADD_HARM:2 <aoe> radius=5 target=damageable </aoe>'
         - 'MESSAGE:&c&l** DIVINE IMMOLATION ** <aoe> radius=5 target=damageable </aoe>'
 paradox:
-  display: '%group-color%矛盾打擊(paradox)'
+  display: '%group-color%吸收治療(paradox)'
   description: "被動靈魂附魔.\n在一個大範圍內\n用自身部分所受傷害\n治療你的盟友."
   applies-to: 'Swords'
   type: 'DEFENSE'
